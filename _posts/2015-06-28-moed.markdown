@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "MOED"
+date:   2015-06-28 08:12:25
+categories: economy
+gdoc: 1NEhvrFwqwgSUrkHmUfPzsHeLA0PMDLcGGhdoZ1sBtbY
+map: http://abhinemani.cartodb.com/viz/809222ea-c822-11e4-9df5-0e9d821ea90d/embed_map
+shorttitle: MOED
+---
