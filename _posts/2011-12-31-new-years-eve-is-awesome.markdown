@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "MOBI"
+date:   2015-06-28 08:12:25
+categories: mayor
+gdoc: 1_jkX0g0_jdskSpFve8xQqw9e1UAsiYD-lYWsi01ujOw
+map: http://abhinemani.cartodb.com/viz/db2706d4-bd74-11e4-9914-0e9d821ea90d/embed_map
+shorttitle: MOBI
+---

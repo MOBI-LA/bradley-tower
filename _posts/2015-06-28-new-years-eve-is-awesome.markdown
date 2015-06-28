@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "HSPS"
+date:   2015-06-28 08:12:25
+categories: jekyll update
+gdoc: 1mhLYVgvMvL3MhAn5Wm6YgdpCrldSu5feTMtU4d_6_Vo
+map: http://abhinemani.cartodb.com/viz/db2706d4-bd74-11e4-9914-0e9d821ea90d/embed_map
+shorttitle: HSPS
+---
