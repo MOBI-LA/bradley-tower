@@ -29,7 +29,7 @@
 			<ul class="navbar-nav">
 			    {% for post in site.posts %}
 			      <li>
-			        <a href="{{ post.url }}">
+			        <a href="{{ site.baseurl }}{{ post.url }}">
 						<i class="linecons-cog"></i>
 						{{ post.title }}
 					</a>
