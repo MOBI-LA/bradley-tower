@@ -6,10 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Xenon Boostrap Admin Panel" />
-	<meta name="author" content="" />
 
-	<title>Los Angeles City - Dashboard</title>
+    <title>Homelessness &#8211; Mayoral Dashboard City of Los Angeles</title>
+    <meta name="description" content="The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.">
+    <meta name="author" content="">
+	
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
 	<link rel="stylesheet" href="/css/fonts/linecons/css/linecons.css">
@@ -72,33 +73,48 @@
 			<ul class="navbar-nav">
 			    
 			      <li>
-			        <a href="/economy/2015/06/28/moed.html">
+			        <a href="/MOED">
 						<i class="linecons-cog"></i>
 						MOED
 					</a>
 			      </li>
 			    
 			      <li>
-			        <a href="/management/2015/06/28/mocs.html">
+			        <a href="/MOCS">
 						<i class="linecons-cog"></i>
 						MOCS
 					</a>
 			      </li>
 			    
 			      <li>
-			        <a href="/management/2015/06/28/mobi.html">
-						<i class="linecons-cog"></i>
-						MOBI
-					</a>
-			      </li>
-			    
-			      <li>
-			        <a href="/safety/2015/06/28/hsps.html">
+			        <a href="/HSPS">
 						<i class="linecons-cog"></i>
 						HSPS
 					</a>
 			      </li>
 			    
+			      <li>
+			        <a href="/MOBI">
+						<i class="linecons-cog"></i>
+						MOBI
+					</a>
+			      </li>
+			    
+				<li>
+					<a href="#">
+						<i class="linecons-cog"></i>Focus Areas
+					</a>
+					<ul>
+					    
+					      <li>
+					        <a href="/homelessness">
+								<i class="linecons-cog"></i>
+								Homelessness
+							</a>
+					      </li>
+					    
+					</ul>
+				</li>
 			</ul>
 		
 					
@@ -116,95 +132,76 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-			<h1 class="bg-info">MOBI</h1>
+			<h1 class="bg-info">Homelessness</h1>
 			<div class="row">
-			    			<script type="text/javascript">
-				var sample_notification;
+			    <div class="panel panel-default">
 				
-					jQuery(document).ready(function($)
-					{	
-						
-					if( ! $.isFunction($.fn.dxChart))
-						return;
-					
-					// Charts
-					var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
-					
-					// Pageviews Visitors Chart
-					var i = 0,
-						line_chart_data_source = [
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 6, part2: 6 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
+	<div class="panel-body">
+		<div class="col-sm-12">
 							
-							
-					];
-					
-					$("#pageviews-visitors-chart").dxChart({
-						dataSource: line_chart_data_source,
-						commonSeriesSettings: {
-							argumentField: "id",
-							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: 'inherit'} },
-							line: {width: 1, hoverStyle: {width: 1}}
-						},
-						series: [
-							{ valueField: "part1", name: "Pageviews", color: "#7c38bc" },
-							{ valueField: "part2", name: "Visitors", color: "#00b19d" },
-						],
-						legend: {
-							position: 'inside',
-							paddingLeftRight: 5
-						},
-						commonAxisSettings: {
-							label: {
-								visible: false
-							},
-							grid: {
-								visible: true,
-								color: '#f9f9f9'
-							}
-						},
-						valueAxis: {
-							max: 7
-						},
-						argumentAxis: {
-					        valueMarginsEnabled: false
-					    },
-					});					
-					
-					// Resize charts
-					$(window).on('xenon.resize', function()
-					{
-						$("#pageviews-visitors-chart").data("dxChart").render();
-					});
-					
+			<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
+									
+				var dataSource = [
+
+					{month: 'Jan-14', waittime: 257},
+					{month: 'Feb-14', waittime: 288},
+					{month: 'March-14', waittime: 266},
+					{month: 'April-14', waittime: 304},
+					{month: 'May-14', waittime: 289},
+					{month: 'June-14', waittime: 306},
+					{month: 'July-14', waittime: 328},
+					{month: 'Aug-14', waittime: 334},
+					{month: 'Sept-14', waittime: 389},
+					{month: 'Oct-14', waittime: 276},
+					{month: 'Nov-14', waittime: 175},
+					{month: 'Dec-14', waittime: 176},
+					{month: 'Jan-15', waittime: 150},
+					{month: 'Feb-15', waittime: 158},
+				];
+								
+				$("#bar-7").dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: "month"
+					},
+					series: [
+						{ valueField: "waittime", name: "Veteran Homeless LA Monthly Housed", color: "#7c38bc" },
+																												
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: "Veteran Homeless LA Monthly Housed",
+					legend: {
+						verticalAlignment: "bottom",
+						horizontalAlignment: "center"
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}	   
+					}
 				});
+			});
 			</script>
-				<div class="col-sm-12">
-					<div class="chart-item-bg">
-						<div class="chart-label">
-							<div class="h3 text-bold"  data-count="this" data-from="0.00" data-to="320602" data-suffix=" May" data-duration="1">0.00%</div>
-							<span class="text-medium text-muted">Unique visitors: LACity.org</span>
-						</div>
-						<div id="pageviews-visitors-chart" style="height: 220px;"></div>
-					</div>
-				</div>
+			<div id="bar-7" style="height: 250px; width: 100%;"></div>
+	
+		</div>
+						
+			
+						
+				
+	</div>
 			</div>
 				
 			
@@ -212,7 +209,7 @@
 
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
-				var URL = "1_jkX0g0_jdskSpFve8xQqw9e1UAsiYD-lYWsi01ujOw"
+				var URL = "1JURX0KXkThk1wm-bFu7PLhaYlA7yX4IYKMlJzO9e6fc"
 				Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
 			})
 				
@@ -273,15 +270,8 @@
 			
   
 			<div id="photogrid"></div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<iframe width='100%' height='300' frameborder='0' src='' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
+			
+			 
 			
 			
 <footer class="main-footer sticky footer-type-1">

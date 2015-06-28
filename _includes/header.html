@@ -27,7 +27,7 @@
 			
 			<!-- main menu -->
 			<ul class="navbar-nav">
-			    {% for post in site.posts %}
+			    {% for post in site.categories.mayor %}
 			      <li>
 			        <a href="{{ site.baseurl }}{{ post.url }}">
 						<i class="linecons-cog"></i>
@@ -35,6 +35,21 @@
 					</a>
 			      </li>
 			    {% endfor %}
+				<li>
+					<a href="#">
+						<i class="linecons-cog"></i>Focus Areas
+					</a>
+					<ul>
+					    {% for post in site.categories.focus %}
+					      <li>
+					        <a href="{{ site.baseurl }}{{ post.url }}">
+								<i class="linecons-cog"></i>
+								{{ post.title }}
+							</a>
+					      </li>
+					    {% endfor %}
+					</ul>
+				</li>
 			</ul>
 		
 					

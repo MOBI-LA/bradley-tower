@@ -6,10 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Xenon Boostrap Admin Panel" />
-	<meta name="author" content="" />
 
-	<title>Los Angeles City - Dashboard</title>
+    <title>MOBI &#8211; Mayoral Dashboard City of Los Angeles</title>
+    <meta name="description" content="The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.">
+    <meta name="author" content="">
+	
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
 	<link rel="stylesheet" href="/css/fonts/linecons/css/linecons.css">
@@ -72,33 +73,48 @@
 			<ul class="navbar-nav">
 			    
 			      <li>
-			        <a href="/economy/2015/06/28/moed.html">
+			        <a href="/MOED">
 						<i class="linecons-cog"></i>
 						MOED
 					</a>
 			      </li>
 			    
 			      <li>
-			        <a href="/management/2015/06/28/mocs.html">
+			        <a href="/MOCS">
 						<i class="linecons-cog"></i>
 						MOCS
 					</a>
 			      </li>
 			    
 			      <li>
-			        <a href="/management/2015/06/28/mobi.html">
-						<i class="linecons-cog"></i>
-						MOBI
-					</a>
-			      </li>
-			    
-			      <li>
-			        <a href="/safety/2015/06/28/hsps.html">
+			        <a href="/HSPS">
 						<i class="linecons-cog"></i>
 						HSPS
 					</a>
 			      </li>
 			    
+			      <li>
+			        <a href="/MOBI">
+						<i class="linecons-cog"></i>
+						MOBI
+					</a>
+			      </li>
+			    
+				<li>
+					<a href="#">
+						<i class="linecons-cog"></i>Focus Areas
+					</a>
+					<ul>
+					    
+					      <li>
+					        <a href="/homelessness">
+								<i class="linecons-cog"></i>
+								Homelessness
+							</a>
+					      </li>
+					    
+					</ul>
+				</li>
 			</ul>
 		
 					
@@ -116,130 +132,95 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-			<h1 class="bg-info">MOCS</h1>
+			<h1 class="bg-info">MOBI</h1>
 			<div class="row">
-			    						<div class="panel panel-default">
-								<div class="panel-body">
-									<div class="col-sm-6">
-							
-									<script type="text/javascript">
-										jQuery(document).ready(function($)
-										{
-											if( ! $.isFunction($.fn.dxChart))
-												return;
-									
-											var dataSource = [
-			{month: 'July 2013', waittime: 6.08, goal: 3 },
-			{month: 'August 2013', waittime: 14.55 },
-			{month: 'September 2013', waittime: 17.34 },
-			{month: 'October 2013', waittime: 25.89 },
-			{month: 'November 2013', waittime: 31.58 },
-			{month: 'December 2013', waittime: 16.91 },
-			{month: 'January 2014', waittime: 20.09 },
-			{month: 'February 2014', waittime: 31.59 },
-			{month: 'March 2014', waittime: 33.52 },
-			{month: 'April 2014', waittime: 21.01 },
-			{month: 'May 2014', waittime: 18.31 },
-			{month: 'June 2014', waittime: 32.9 },
-			{month: 'July 2014', waittime: 40.43 },
-			{month: 'August 2014', waittime: 39.65 },
-			{month: 'September 2014', waittime: 15.66 },
-			{month: 'October 2014', waittime: 8.78, goal: 3 },
-			{month: 'November 2014', waittime: 4.23, goal: 3 },
-			{month: 'December 2014', waittime: 5.72, goal: 3 },
-			{month: 'January 2015', waittime: 3.29, goal: 3 },
-			{month: 'February 2015', waittime: 5.95, goal: 3 },
-			{month: 'March 2015', waittime: 10.1, goal: 3 },
-
-											];
-								
-											$("#bar-12").dxChart({
-												dataSource: dataSource,
-												commonSeriesSettings: {
-													argumentField: "month"
-												},
-												series: [
-													{ valueField: "waittime", name: "DWP Wait Times (Minutes)", color: "#40bbea" },
-													{ valueField: "goal", name: "Goal", color: "#990000" },
-										
-												],
-												argumentAxis:{
-													grid:{
-														visible: true
-													}
-												},
-												tooltip:{
-													enabled: true
-												},
-												title: "DWP Call Wait Time",
-												legend: {
-													verticalAlignment: "bottom",
-													horizontalAlignment: "center"
-												},
-												commonPaneSettings: {
-													border:{
-														visible: true,
-														right: false
-													}	   
-												}
-											});
-										});
-									</script>
-									<div id="bar-12" style="height: 300px; width: 100%;"></div>
-					
-					
-						</div>
-						<div class="col-sm-6">
-							<script type="text/javascript">
-							jQuery(document).ready(function($)
-							{
-								if( ! $.isFunction($.fn.dxChart))
-									return;
-							
-								var dataSource = [
-									{region: "New Starts Grants: Purple Line Phase 1", val: 1250000000},
-									{region: "New Starts Grants: Regional Connector", val: 670000000},
-									{region: "TIFIA: Purple Line Phase 1", val: 856000000},
-									{region: "TIFIA: Regional Connector", val: 160000000}
-								], timer;
+			    			<script type="text/javascript">
+				var sample_notification;
+				
+					jQuery(document).ready(function($)
+					{	
 						
-								$("#bar-8").dxPieChart({
-									dataSource: dataSource,
-									title: "MTA Money Raised ($3B)",
-									tooltip: {
-										enabled: true,
-									  	format:"millions",
-										customizeText: function() { 
-											return this.argumentText + "<br/>" + this.valueText;
-										}
-									},
-									size: {
-										height: 280
-									},
-									pointClick: function(point) {
-										point.showTooltip();
-										clearTimeout(timer);
-										timer = setTimeout(function() { point.hideTooltip(); }, 2000);
-										$("select option:contains(" + point.argument + ")").prop("selected", true);
-									},
-									legend: {
-										visible: true,
-
-									},  
-									series: [{
-										type: "doughnut",
-										argumentField: "region"
-									}],
-												palette: xenonPalette
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					
+					// Charts
+					var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
+					
+					// Pageviews Visitors Chart
+					var i = 0,
+						line_chart_data_source = [
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 6, part2: 6 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
 							
-								});
-						
-							});
-							</script>
-							<div id="bar-8" style="height: 300px; width: 100%;"></div>
+							
+					];
+					
+					$("#pageviews-visitors-chart").dxChart({
+						dataSource: line_chart_data_source,
+						commonSeriesSettings: {
+							argumentField: "id",
+							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: 'inherit'} },
+							line: {width: 1, hoverStyle: {width: 1}}
+						},
+						series: [
+							{ valueField: "part1", name: "Pageviews", color: "#7c38bc" },
+							{ valueField: "part2", name: "Visitors", color: "#00b19d" },
+						],
+						legend: {
+							position: 'inside',
+							paddingLeftRight: 5
+						},
+						commonAxisSettings: {
+							label: {
+								visible: false
+							},
+							grid: {
+								visible: true,
+								color: '#f9f9f9'
+							}
+						},
+						valueAxis: {
+							max: 7
+						},
+						argumentAxis: {
+					        valueMarginsEnabled: false
+					    },
+					});					
+					
+					// Resize charts
+					$(window).on('xenon.resize', function()
+					{
+						$("#pageviews-visitors-chart").data("dxChart").render();
+					});
+					
+				});
+			</script>
+				<div class="col-sm-12">
+					<div class="chart-item-bg">
+						<div class="chart-label">
+							<div class="h3 text-bold"  data-count="this" data-from="0.00" data-to="320602" data-suffix=" May" data-duration="1">0.00%</div>
+							<span class="text-medium text-muted">Unique visitors: LACity.org</span>
 						</div>
-
-						</div>
+						<div id="pageviews-visitors-chart" style="height: 220px;"></div>
+					</div>
+				</div>
 			</div>
 				
 			
@@ -247,7 +228,7 @@
 
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
-				var URL = "1ZVxlgt9couygM7bzteI3YMX8OSE-jnfZAssTb8xUQ2Q"
+				var URL = "1_jkX0g0_jdskSpFve8xQqw9e1UAsiYD-lYWsi01ujOw"
 				Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
 			})
 				
@@ -308,15 +289,8 @@
 			
   
 			<div id="photogrid"></div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<iframe width='100%' height='300' frameborder='0' src='http://abhinemani.cartodb.com/viz/809222ea-c822-11e4-9df5-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
+			
+			 
 			
 			
 <footer class="main-footer sticky footer-type-1">

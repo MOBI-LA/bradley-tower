@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
+    <title>Mayoral Dashboard City of Los Angeles</title>
+    <description>The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Jun 2015 11:12:00 -0700</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2015 11:12:00 -0700</lastBuildDate>
+    <pubDate>Sun, 28 Jun 2015 11:28:12 -0700</pubDate>
+    <lastBuildDate>Sun, 28 Jun 2015 11:28:12 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -104,11 +103,11 @@
 
 					&lt;/div&gt;</description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
-        <link>http://yourdomain.com/economy/2015/06/28/moed.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/economy/2015/06/28/moed.html</guid>
+        <link>http://yourdomain.com/MOED</link>
+        <guid isPermaLink="true">http://yourdomain.com/MOED</guid>
         
         
-        <category>economy</category>
+        <category>mayor</category>
         
       </item>
     
@@ -237,109 +236,11 @@
 
 						&lt;/div&gt;</description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
-        <link>http://yourdomain.com/management/2015/06/28/mocs.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/management/2015/06/28/mocs.html</guid>
+        <link>http://yourdomain.com/MOCS</link>
+        <guid isPermaLink="true">http://yourdomain.com/MOCS</guid>
         
         
-        <category>management</category>
-        
-      </item>
-    
-      <item>
-        <title>MOBI</title>
-        <description>			&lt;script type=&quot;text/javascript&quot;&gt;
-				var sample_notification;
-				
-					jQuery(document).ready(function($)
-					{	
-						
-					if( ! $.isFunction($.fn.dxChart))
-						return;
-					
-					// Charts
-					var xenonPalette = [&#39;#68b828&#39;,&#39;#7c38bc&#39;,&#39;#0e62c7&#39;,&#39;#fcd036&#39;,&#39;#4fcdfc&#39;,&#39;#00b19d&#39;,&#39;#ff6264&#39;,&#39;#f7aa47&#39;];
-					
-					// Pageviews Visitors Chart
-					var i = 0,
-						line_chart_data_source = [
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 6, part2: 6 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-							
-							
-					];
-					
-					$(&quot;#pageviews-visitors-chart&quot;).dxChart({
-						dataSource: line_chart_data_source,
-						commonSeriesSettings: {
-							argumentField: &quot;id&quot;,
-							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: &#39;inherit&#39;} },
-							line: {width: 1, hoverStyle: {width: 1}}
-						},
-						series: [
-							{ valueField: &quot;part1&quot;, name: &quot;Pageviews&quot;, color: &quot;#7c38bc&quot; },
-							{ valueField: &quot;part2&quot;, name: &quot;Visitors&quot;, color: &quot;#00b19d&quot; },
-						],
-						legend: {
-							position: &#39;inside&#39;,
-							paddingLeftRight: 5
-						},
-						commonAxisSettings: {
-							label: {
-								visible: false
-							},
-							grid: {
-								visible: true,
-								color: &#39;#f9f9f9&#39;
-							}
-						},
-						valueAxis: {
-							max: 7
-						},
-						argumentAxis: {
-					        valueMarginsEnabled: false
-					    },
-					});					
-					
-					// Resize charts
-					$(window).on(&#39;xenon.resize&#39;, function()
-					{
-						$(&quot;#pageviews-visitors-chart&quot;).data(&quot;dxChart&quot;).render();
-					});
-					
-				});
-			&lt;/script&gt;
-				&lt;div class=&quot;col-sm-12&quot;&gt;
-					&lt;div class=&quot;chart-item-bg&quot;&gt;
-						&lt;div class=&quot;chart-label&quot;&gt;
-							&lt;div class=&quot;h3 text-bold&quot;  data-count=&quot;this&quot; data-from=&quot;0.00&quot; data-to=&quot;320602&quot; data-suffix=&quot; May&quot; data-duration=&quot;1&quot;&gt;0.00%&lt;/div&gt;
-							&lt;span class=&quot;text-medium text-muted&quot;&gt;Unique visitors: LACity.org&lt;/span&gt;
-						&lt;/div&gt;
-						&lt;div id=&quot;pageviews-visitors-chart&quot; style=&quot;height: 220px;&quot;&gt;&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;</description>
-        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
-        <link>http://yourdomain.com/management/2015/06/28/mobi.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/management/2015/06/28/mobi.html</guid>
-        
-        
-        <category>management</category>
+        <category>mayor</category>
         
       </item>
     
@@ -621,11 +522,188 @@
 	&lt;/div&gt;
 &lt;/div&gt;</description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
-        <link>http://yourdomain.com/safety/2015/06/28/hsps.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/safety/2015/06/28/hsps.html</guid>
+        <link>http://yourdomain.com/HSPS</link>
+        <guid isPermaLink="true">http://yourdomain.com/HSPS</guid>
         
         
-        <category>safety</category>
+        <category>mayor</category>
+        
+      </item>
+    
+      <item>
+        <title>Homelessness</title>
+        <description>&lt;div class=&quot;panel panel-default&quot;&gt;
+				
+	&lt;div class=&quot;panel-body&quot;&gt;
+		&lt;div class=&quot;col-sm-12&quot;&gt;
+							
+			&lt;script type=&quot;text/javascript&quot;&gt;
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
+									
+				var dataSource = [
+
+					{month: &#39;Jan-14&#39;, waittime: 257},
+					{month: &#39;Feb-14&#39;, waittime: 288},
+					{month: &#39;March-14&#39;, waittime: 266},
+					{month: &#39;April-14&#39;, waittime: 304},
+					{month: &#39;May-14&#39;, waittime: 289},
+					{month: &#39;June-14&#39;, waittime: 306},
+					{month: &#39;July-14&#39;, waittime: 328},
+					{month: &#39;Aug-14&#39;, waittime: 334},
+					{month: &#39;Sept-14&#39;, waittime: 389},
+					{month: &#39;Oct-14&#39;, waittime: 276},
+					{month: &#39;Nov-14&#39;, waittime: 175},
+					{month: &#39;Dec-14&#39;, waittime: 176},
+					{month: &#39;Jan-15&#39;, waittime: 150},
+					{month: &#39;Feb-15&#39;, waittime: 158},
+				];
+								
+				$(&quot;#bar-7&quot;).dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: &quot;month&quot;
+					},
+					series: [
+						{ valueField: &quot;waittime&quot;, name: &quot;Veteran Homeless LA Monthly Housed&quot;, color: &quot;#7c38bc&quot; },
+																												
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: &quot;Veteran Homeless LA Monthly Housed&quot;,
+					legend: {
+						verticalAlignment: &quot;bottom&quot;,
+						horizontalAlignment: &quot;center&quot;
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}	   
+					}
+				});
+			});
+			&lt;/script&gt;
+			&lt;div id=&quot;bar-7&quot; style=&quot;height: 250px; width: 100%;&quot;&gt;&lt;/div&gt;
+	
+		&lt;/div&gt;
+						
+			
+						
+				
+	&lt;/div&gt;</description>
+        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
+        <link>http://yourdomain.com/homelessness</link>
+        <guid isPermaLink="true">http://yourdomain.com/homelessness</guid>
+        
+        
+        <category>focus</category>
+        
+      </item>
+    
+      <item>
+        <title>MOBI</title>
+        <description>			&lt;script type=&quot;text/javascript&quot;&gt;
+				var sample_notification;
+				
+					jQuery(document).ready(function($)
+					{	
+						
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					
+					// Charts
+					var xenonPalette = [&#39;#68b828&#39;,&#39;#7c38bc&#39;,&#39;#0e62c7&#39;,&#39;#fcd036&#39;,&#39;#4fcdfc&#39;,&#39;#00b19d&#39;,&#39;#ff6264&#39;,&#39;#f7aa47&#39;];
+					
+					// Pageviews Visitors Chart
+					var i = 0,
+						line_chart_data_source = [
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 6, part2: 6 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+							
+							
+					];
+					
+					$(&quot;#pageviews-visitors-chart&quot;).dxChart({
+						dataSource: line_chart_data_source,
+						commonSeriesSettings: {
+							argumentField: &quot;id&quot;,
+							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: &#39;inherit&#39;} },
+							line: {width: 1, hoverStyle: {width: 1}}
+						},
+						series: [
+							{ valueField: &quot;part1&quot;, name: &quot;Pageviews&quot;, color: &quot;#7c38bc&quot; },
+							{ valueField: &quot;part2&quot;, name: &quot;Visitors&quot;, color: &quot;#00b19d&quot; },
+						],
+						legend: {
+							position: &#39;inside&#39;,
+							paddingLeftRight: 5
+						},
+						commonAxisSettings: {
+							label: {
+								visible: false
+							},
+							grid: {
+								visible: true,
+								color: &#39;#f9f9f9&#39;
+							}
+						},
+						valueAxis: {
+							max: 7
+						},
+						argumentAxis: {
+					        valueMarginsEnabled: false
+					    },
+					});					
+					
+					// Resize charts
+					$(window).on(&#39;xenon.resize&#39;, function()
+					{
+						$(&quot;#pageviews-visitors-chart&quot;).data(&quot;dxChart&quot;).render();
+					});
+					
+				});
+			&lt;/script&gt;
+				&lt;div class=&quot;col-sm-12&quot;&gt;
+					&lt;div class=&quot;chart-item-bg&quot;&gt;
+						&lt;div class=&quot;chart-label&quot;&gt;
+							&lt;div class=&quot;h3 text-bold&quot;  data-count=&quot;this&quot; data-from=&quot;0.00&quot; data-to=&quot;320602&quot; data-suffix=&quot; May&quot; data-duration=&quot;1&quot;&gt;0.00%&lt;/div&gt;
+							&lt;span class=&quot;text-medium text-muted&quot;&gt;Unique visitors: LACity.org&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;pageviews-visitors-chart&quot; style=&quot;height: 220px;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;</description>
+        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
+        <link>http://yourdomain.com/MOBI</link>
+        <guid isPermaLink="true">http://yourdomain.com/MOBI</guid>
+        
+        
+        <category>mayor</category>
         
       </item>
     
