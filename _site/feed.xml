@@ -5,9 +5,238 @@
     <description>The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Jun 2015 11:28:12 -0700</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2015 11:28:12 -0700</lastBuildDate>
+    <pubDate>Sun, 28 Jun 2015 11:48:58 -0700</pubDate>
+    <lastBuildDate>Sun, 28 Jun 2015 11:48:58 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Poverty</title>
+        <description>&lt;div class=&quot;panel panel-default&quot;&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+		&lt;div class=&quot;col-sm-12&quot;&gt;
+			&lt;script type=&quot;text/javascript&quot;&gt;
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
+
+				var dataSource = [
+					{month: &#39;Jan-12&#39;, waittime: 12.58, goal: 13.1},
+					{month: &#39;Feb-12&#39;, waittime: 12.22, goal: 12.8},
+					{month: &#39;March-12&#39;, waittime: 11.82, goal: 12.4},
+					{month: &#39;April-12&#39;, waittime: 11.23, goal: 11.6},
+					{month: &#39;May-12&#39;, waittime: 11.36, goal: 11.9},
+					{month: &#39;June-12&#39;, waittime: 11.73, goal: 12.3},
+					{month: &#39;July-12&#39;, waittime: 12.43, goal: 13.1},
+					{month: &#39;Aug-12&#39;, waittime: 11.8, goal: 12.4},
+					{month: &#39;Sept-12&#39;, waittime: 11, goal: 11.4},
+					{month: &#39;Oct-12&#39;, waittime: 11, goal: 11.5},
+					{month: &#39;Nov-12&#39;, waittime: 10.61, goal: 11},
+					{month: &#39;Dec-12&#39;, waittime: 10.74, goal: 11.2},
+					{month: &#39;Jan-13&#39;, waittime: 11.45, goal: 12.1},
+					{month: &#39;Feb-13&#39;, waittime: 10.74, goal: 11.3},
+					{month: &#39;March-13&#39;, waittime: 10.33, goal: 11},
+					{month: &#39;April-13&#39;, waittime: 10, goal: 10.4},
+					{month: &#39;May-13&#39;, waittime: 10.12, goal: 10.7},
+					{month: &#39;June-13&#39;, waittime: 10.75, goal: 11.4},
+					{month: &#39;July-13&#39;, waittime: 11.07, goal: 11.8},
+					{month: &#39;Aug-13&#39;, waittime: 10.5, goal: 11.2},
+					{month: &#39;Sept-13&#39;, waittime: 9.97, goal: 10.6},
+					{month: &#39;Oct-13&#39;, waittime: 9.87, goal: 10.6},
+					{month: &#39;Nov-13&#39;, waittime: 9.37, goal: 10.1},
+					{month: &#39;Dec-13&#39;, waittime: 9.03, goal: 9.7},
+					{month: &#39;Jan-14&#39;, waittime: 9.43, goal: 9.9},
+					{month: &#39;Feb-14&#39;, waittime: 9.17, goal: 9.8},
+					{month: &#39;March-14&#39;, waittime: 9, goal: 9.7},
+					{month: &#39;April-14&#39;, waittime: 8.24, goal: 8.4},
+					{month: &#39;May-14&#39;, waittime: 8.45, goal: 8.8},
+					{month: &#39;June-14&#39;, waittime: 8.71, goal: 9.1},
+					{month: &#39;July-14&#39;, waittime: 9.44, goal: 9.6},
+					{month: &#39;Aug-14&#39;, waittime: 9.1, goal: 9.4},
+					{month: &#39;Sept-14&#39;, waittime: 8.54, goal: 8.6},
+					{month: &#39;Oct-14&#39;, waittime: 8.46, goal: 8.7},
+					{month: &#39;Nov-14&#39;, waittime: 8.38, goal: 8.8},
+					{month: &#39;Dec-14&#39;, waittime: 8.01, goal: 8},
+					{month: &#39;Jan-15&#39;, waittime: 8.66, goal: 8.6},
+					{month: &#39;Feb-15&#39;, waittime: 8.18, goal: 8.1},
+					{month: &#39;March-15&#39;, waittime: 7.73, goal: 7.7},
+				];
+
+				$(&quot;#bar-7&quot;).dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: &quot;month&quot;
+					},
+					series: [
+						{ valueField: &quot;waittime&quot;, name: &quot;UCLA Forecast Estimate&quot;, color: &quot;#7c38bc&quot; },
+
+						{ valueField: &quot;goal&quot;, name: &quot;CA EDD Estimate&quot;, color: &quot;#990000&quot; },
+
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: &quot;Unemployment Rate Estimates&quot;,
+					legend: {
+						verticalAlignment: &quot;bottom&quot;,
+						horizontalAlignment: &quot;center&quot;
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}
+					}
+				});
+			});
+			&lt;/script&gt;
+			&lt;div id=&quot;bar-7&quot; style=&quot;height: 250px; width: 100%;&quot;&gt;&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+		&lt;div class=&quot;panel-body&quot;&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+							
+					var dataSource = [
+						{region: &quot;Under 25K&quot;, val: .278},
+						{region: &quot;25-75K&quot;, val: .392},
+						{region: &quot;75K-150K&quot;, val: .215},
+						{region: &quot;Over 200K&quot;, val: .069},	
+					], timer;
+					$(&quot;#bar-10&quot;).dxPieChart({
+						dataSource: dataSource,
+						title: &quot;Household Income&quot;,
+						tooltip: {
+							enabled: true,
+							format:&quot;percent&quot;,
+						},
+						size: {
+							height: 250
+						},
+						pointClick: function(point) {
+							point.showTooltip();
+							clearTimeout(timer);
+							timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+							$(&quot;select option:contains(&quot; + point.argument + &quot;)&quot;).prop(&quot;selected&quot;, true);
+						},
+						legend: {
+							visible: true,
+						},
+						series: [{
+							type: &quot;doughnut&quot;,
+							argumentField: &quot;region&quot;
+						}],
+						palette: xenonPalette
+					});
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;bar-10&quot; style=&quot;height: 300px; width: 100%;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+							
+					var dataSource = [
+						{region: &quot;Poverty&quot;, val: .34},
+						{region: &quot;Non-Poverty&quot;, val: .66},
+					], timer;
+					$(&quot;#bar-8&quot;).dxPieChart({
+						dataSource: dataSource,
+						title: &quot;Childhood Poverty&quot;,
+						tooltip: {
+							enabled: true,
+							format:&quot;percent&quot;,
+						},
+						size: {
+							height: 250
+						},
+						pointClick: function(point) {
+							point.showTooltip();
+							clearTimeout(timer);
+							timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+							$(&quot;select option:contains(&quot; + point.argument + &quot;)&quot;).prop(&quot;selected&quot;, true);
+						},
+						legend: {
+							visible: true,
+						},
+						series: [{
+							type: &quot;doughnut&quot;,
+							argumentField: &quot;region&quot;
+						}],
+						palette: xenonPalette
+					});
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;bar-8&quot; style=&quot;height: 300px; width: 100%;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+							
+					var dataSource = [
+						{region: &quot;Poverty&quot;, val: .17},
+						{region: &quot;Non-Poverty&quot;, val: .83},
+					], timer;
+					$(&quot;#bar-9&quot;).dxPieChart({
+						dataSource: dataSource,
+						title: &quot;Elderly Poverty&quot;,
+						tooltip: {
+							enabled: true,
+							format:&quot;percent&quot;,
+						},
+						size: {
+							height: 250
+						},
+						pointClick: function(point) {
+							point.showTooltip();
+							clearTimeout(timer);
+							timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+							$(&quot;select option:contains(&quot; + point.argument + &quot;)&quot;).prop(&quot;selected&quot;, true);
+						},
+						legend: {
+							visible: true,
+						},
+						series: [{
+							type: &quot;doughnut&quot;,
+							argumentField: &quot;region&quot;
+						}],
+						palette: xenonPalette
+					});
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;bar-9&quot; style=&quot;height: 300px; width: 100%;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	
+
+</description>
+        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
+        <link>http://yourdomain.com/poverty</link>
+        <guid isPermaLink="true">http://yourdomain.com/poverty</guid>
+        
+        
+        <category>focus</category>
+        
+      </item>
     
       <item>
         <title>MOED</title>
@@ -238,6 +467,104 @@
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
         <link>http://yourdomain.com/MOCS</link>
         <guid isPermaLink="true">http://yourdomain.com/MOCS</guid>
+        
+        
+        <category>mayor</category>
+        
+      </item>
+    
+      <item>
+        <title>MOBI</title>
+        <description>			&lt;script type=&quot;text/javascript&quot;&gt;
+				var sample_notification;
+				
+					jQuery(document).ready(function($)
+					{	
+						
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					
+					// Charts
+					var xenonPalette = [&#39;#68b828&#39;,&#39;#7c38bc&#39;,&#39;#0e62c7&#39;,&#39;#fcd036&#39;,&#39;#4fcdfc&#39;,&#39;#00b19d&#39;,&#39;#ff6264&#39;,&#39;#f7aa47&#39;];
+					
+					// Pageviews Visitors Chart
+					var i = 0,
+						line_chart_data_source = [
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 6, part2: 6 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+							
+							
+					];
+					
+					$(&quot;#pageviews-visitors-chart&quot;).dxChart({
+						dataSource: line_chart_data_source,
+						commonSeriesSettings: {
+							argumentField: &quot;id&quot;,
+							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: &#39;inherit&#39;} },
+							line: {width: 1, hoverStyle: {width: 1}}
+						},
+						series: [
+							{ valueField: &quot;part1&quot;, name: &quot;Pageviews&quot;, color: &quot;#7c38bc&quot; },
+							{ valueField: &quot;part2&quot;, name: &quot;Visitors&quot;, color: &quot;#00b19d&quot; },
+						],
+						legend: {
+							position: &#39;inside&#39;,
+							paddingLeftRight: 5
+						},
+						commonAxisSettings: {
+							label: {
+								visible: false
+							},
+							grid: {
+								visible: true,
+								color: &#39;#f9f9f9&#39;
+							}
+						},
+						valueAxis: {
+							max: 7
+						},
+						argumentAxis: {
+					        valueMarginsEnabled: false
+					    },
+					});					
+					
+					// Resize charts
+					$(window).on(&#39;xenon.resize&#39;, function()
+					{
+						$(&quot;#pageviews-visitors-chart&quot;).data(&quot;dxChart&quot;).render();
+					});
+					
+				});
+			&lt;/script&gt;
+				&lt;div class=&quot;col-sm-12&quot;&gt;
+					&lt;div class=&quot;chart-item-bg&quot;&gt;
+						&lt;div class=&quot;chart-label&quot;&gt;
+							&lt;div class=&quot;h3 text-bold&quot;  data-count=&quot;this&quot; data-from=&quot;0.00&quot; data-to=&quot;320602&quot; data-suffix=&quot; May&quot; data-duration=&quot;1&quot;&gt;0.00%&lt;/div&gt;
+							&lt;span class=&quot;text-medium text-muted&quot;&gt;Unique visitors: LACity.org&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;pageviews-visitors-chart&quot; style=&quot;height: 220px;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;</description>
+        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
+        <link>http://yourdomain.com/MOBI</link>
+        <guid isPermaLink="true">http://yourdomain.com/MOBI</guid>
         
         
         <category>mayor</category>
@@ -610,100 +937,26 @@
       </item>
     
       <item>
-        <title>MOBI</title>
-        <description>			&lt;script type=&quot;text/javascript&quot;&gt;
-				var sample_notification;
-				
-					jQuery(document).ready(function($)
-					{	
-						
-					if( ! $.isFunction($.fn.dxChart))
-						return;
-					
-					// Charts
-					var xenonPalette = [&#39;#68b828&#39;,&#39;#7c38bc&#39;,&#39;#0e62c7&#39;,&#39;#fcd036&#39;,&#39;#4fcdfc&#39;,&#39;#00b19d&#39;,&#39;#ff6264&#39;,&#39;#f7aa47&#39;];
-					
-					// Pageviews Visitors Chart
-					var i = 0,
-						line_chart_data_source = [
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 3 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 6, part2: 6 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 4, part2: 4 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-						{ id: ++i, part1: 5, part2: 5 },
-							
-							
-					];
-					
-					$(&quot;#pageviews-visitors-chart&quot;).dxChart({
-						dataSource: line_chart_data_source,
-						commonSeriesSettings: {
-							argumentField: &quot;id&quot;,
-							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: &#39;inherit&#39;} },
-							line: {width: 1, hoverStyle: {width: 1}}
-						},
-						series: [
-							{ valueField: &quot;part1&quot;, name: &quot;Pageviews&quot;, color: &quot;#7c38bc&quot; },
-							{ valueField: &quot;part2&quot;, name: &quot;Visitors&quot;, color: &quot;#00b19d&quot; },
-						],
-						legend: {
-							position: &#39;inside&#39;,
-							paddingLeftRight: 5
-						},
-						commonAxisSettings: {
-							label: {
-								visible: false
-							},
-							grid: {
-								visible: true,
-								color: &#39;#f9f9f9&#39;
-							}
-						},
-						valueAxis: {
-							max: 7
-						},
-						argumentAxis: {
-					        valueMarginsEnabled: false
-					    },
-					});					
-					
-					// Resize charts
-					$(window).on(&#39;xenon.resize&#39;, function()
-					{
-						$(&quot;#pageviews-visitors-chart&quot;).data(&quot;dxChart&quot;).render();
-					});
-					
-				});
-			&lt;/script&gt;
-				&lt;div class=&quot;col-sm-12&quot;&gt;
-					&lt;div class=&quot;chart-item-bg&quot;&gt;
-						&lt;div class=&quot;chart-label&quot;&gt;
-							&lt;div class=&quot;h3 text-bold&quot;  data-count=&quot;this&quot; data-from=&quot;0.00&quot; data-to=&quot;320602&quot; data-suffix=&quot; May&quot; data-duration=&quot;1&quot;&gt;0.00%&lt;/div&gt;
-							&lt;span class=&quot;text-medium text-muted&quot;&gt;Unique visitors: LACity.org&lt;/span&gt;
-						&lt;/div&gt;
-						&lt;div id=&quot;pageviews-visitors-chart&quot; style=&quot;height: 220px;&quot;&gt;&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;</description>
+        <title>Drought</title>
+        <description></description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
-        <link>http://yourdomain.com/MOBI</link>
-        <guid isPermaLink="true">http://yourdomain.com/MOBI</guid>
+        <link>http://yourdomain.com/drought</link>
+        <guid isPermaLink="true">http://yourdomain.com/drought</guid>
         
         
-        <category>mayor</category>
+        <category>focus</category>
+        
+      </item>
+    
+      <item>
+        <title>City Government Water and Power</title>
+        <description></description>
+        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
+        <link>http://yourdomain.com/govt-water-power</link>
+        <guid isPermaLink="true">http://yourdomain.com/govt-water-power</guid>
+        
+        
+        <category>focus</category>
         
       </item>
     

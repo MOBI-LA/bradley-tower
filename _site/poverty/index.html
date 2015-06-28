@@ -7,7 +7,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>MOED &#8211; Mayoral Dashboard City of Los Angeles</title>
+    <title>Poverty &#8211; Mayoral Dashboard City of Los Angeles</title>
     <meta name="description" content="The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.">
     <meta name="author" content="">
 	
@@ -153,102 +153,229 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-			<h1 class="bg-info">MOED</h1>
+			<h1 class="bg-info">Poverty</h1>
 			<script>
 			var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
 			</script>
 			<div class="row">
-			    
-			<div class="col-sm-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Job Growth</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-							<div class="panel-body">	
-								<script type="text/javascript">
-									jQuery(document).ready(function($)
-									{
-										if( ! $.isFunction($.fn.dxChart))
-											return;
-										
-										var dataSource = [
-											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
-											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
-											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
-											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
-											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
-											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
-											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
-											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
-											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
-										];
-									
-										$("#bar-3").dxChart({
-											dataSource: dataSource,
-											commonSeriesSettings: {
-												argumentField: "year"
-											},
-											series: [
-												{ valueField: "losangeles", name: "Jobs in Los Angeles", color: "#40bbea" },
-												{ valueField: "angelenos", name: "Jobs for Angelenos", color: "#cc3f44" },
-											],
-											argumentAxis:{
-												grid:{
-													visible: true
-												}
-											},
-											tooltip:{
-												enabled: true
-											},
-											title: "",
-											legend: {
-												verticalAlignment: "bottom",
-												horizontalAlignment: "center"
-											},
-											commonPaneSettings: {
-												border:{
-													visible: true,
-													right: false
-												}	   
-											}
-										});
-									});
-								</script>
-								<div id="bar-3" style="height: 300px; width: 100%;"></div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-sm-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Building Permits</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-							<div class="panel-body">	
-								<iframe width='100%' height='300' frameborder='0' src='https://abhinemani.cartodb.com/viz/809222ea-c822-11e4-9df5-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>				
-							</div>
-						</div>
-					
+			    <div class="panel panel-default">
+	<div class="panel-body">
+		<div class="col-sm-12">
+			<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
 
-					</div>
+				var dataSource = [
+					{month: 'Jan-12', waittime: 12.58, goal: 13.1},
+					{month: 'Feb-12', waittime: 12.22, goal: 12.8},
+					{month: 'March-12', waittime: 11.82, goal: 12.4},
+					{month: 'April-12', waittime: 11.23, goal: 11.6},
+					{month: 'May-12', waittime: 11.36, goal: 11.9},
+					{month: 'June-12', waittime: 11.73, goal: 12.3},
+					{month: 'July-12', waittime: 12.43, goal: 13.1},
+					{month: 'Aug-12', waittime: 11.8, goal: 12.4},
+					{month: 'Sept-12', waittime: 11, goal: 11.4},
+					{month: 'Oct-12', waittime: 11, goal: 11.5},
+					{month: 'Nov-12', waittime: 10.61, goal: 11},
+					{month: 'Dec-12', waittime: 10.74, goal: 11.2},
+					{month: 'Jan-13', waittime: 11.45, goal: 12.1},
+					{month: 'Feb-13', waittime: 10.74, goal: 11.3},
+					{month: 'March-13', waittime: 10.33, goal: 11},
+					{month: 'April-13', waittime: 10, goal: 10.4},
+					{month: 'May-13', waittime: 10.12, goal: 10.7},
+					{month: 'June-13', waittime: 10.75, goal: 11.4},
+					{month: 'July-13', waittime: 11.07, goal: 11.8},
+					{month: 'Aug-13', waittime: 10.5, goal: 11.2},
+					{month: 'Sept-13', waittime: 9.97, goal: 10.6},
+					{month: 'Oct-13', waittime: 9.87, goal: 10.6},
+					{month: 'Nov-13', waittime: 9.37, goal: 10.1},
+					{month: 'Dec-13', waittime: 9.03, goal: 9.7},
+					{month: 'Jan-14', waittime: 9.43, goal: 9.9},
+					{month: 'Feb-14', waittime: 9.17, goal: 9.8},
+					{month: 'March-14', waittime: 9, goal: 9.7},
+					{month: 'April-14', waittime: 8.24, goal: 8.4},
+					{month: 'May-14', waittime: 8.45, goal: 8.8},
+					{month: 'June-14', waittime: 8.71, goal: 9.1},
+					{month: 'July-14', waittime: 9.44, goal: 9.6},
+					{month: 'Aug-14', waittime: 9.1, goal: 9.4},
+					{month: 'Sept-14', waittime: 8.54, goal: 8.6},
+					{month: 'Oct-14', waittime: 8.46, goal: 8.7},
+					{month: 'Nov-14', waittime: 8.38, goal: 8.8},
+					{month: 'Dec-14', waittime: 8.01, goal: 8},
+					{month: 'Jan-15', waittime: 8.66, goal: 8.6},
+					{month: 'Feb-15', waittime: 8.18, goal: 8.1},
+					{month: 'March-15', waittime: 7.73, goal: 7.7},
+				];
+
+				$("#bar-7").dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: "month"
+					},
+					series: [
+						{ valueField: "waittime", name: "UCLA Forecast Estimate", color: "#7c38bc" },
+
+						{ valueField: "goal", name: "CA EDD Estimate", color: "#990000" },
+
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: "Unemployment Rate Estimates",
+					legend: {
+						verticalAlignment: "bottom",
+						horizontalAlignment: "center"
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}
+					}
+				});
+			});
+			</script>
+			<div id="bar-7" style="height: 250px; width: 100%;"></div>
+
+		</div>
+	</div>
+</div>
+<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="col-sm-4">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+							
+					var dataSource = [
+						{region: "Under 25K", val: .278},
+						{region: "25-75K", val: .392},
+						{region: "75K-150K", val: .215},
+						{region: "Over 200K", val: .069},	
+					], timer;
+					$("#bar-10").dxPieChart({
+						dataSource: dataSource,
+						title: "Household Income",
+						tooltip: {
+							enabled: true,
+							format:"percent",
+						},
+						size: {
+							height: 250
+						},
+						pointClick: function(point) {
+							point.showTooltip();
+							clearTimeout(timer);
+							timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+							$("select option:contains(" + point.argument + ")").prop("selected", true);
+						},
+						legend: {
+							visible: true,
+						},
+						series: [{
+							type: "doughnut",
+							argumentField: "region"
+						}],
+						palette: xenonPalette
+					});
+				});
+				</script>
+				<div id="bar-10" style="height: 300px; width: 100%;"></div>
+			</div>
+			<div class="col-sm-4">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+							
+					var dataSource = [
+						{region: "Poverty", val: .34},
+						{region: "Non-Poverty", val: .66},
+					], timer;
+					$("#bar-8").dxPieChart({
+						dataSource: dataSource,
+						title: "Childhood Poverty",
+						tooltip: {
+							enabled: true,
+							format:"percent",
+						},
+						size: {
+							height: 250
+						},
+						pointClick: function(point) {
+							point.showTooltip();
+							clearTimeout(timer);
+							timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+							$("select option:contains(" + point.argument + ")").prop("selected", true);
+						},
+						legend: {
+							visible: true,
+						},
+						series: [{
+							type: "doughnut",
+							argumentField: "region"
+						}],
+						palette: xenonPalette
+					});
+				});
+				</script>
+				<div id="bar-8" style="height: 300px; width: 100%;"></div>
+			</div>
+			<div class="col-sm-4">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+							
+					var dataSource = [
+						{region: "Poverty", val: .17},
+						{region: "Non-Poverty", val: .83},
+					], timer;
+					$("#bar-9").dxPieChart({
+						dataSource: dataSource,
+						title: "Elderly Poverty",
+						tooltip: {
+							enabled: true,
+							format:"percent",
+						},
+						size: {
+							height: 250
+						},
+						pointClick: function(point) {
+							point.showTooltip();
+							clearTimeout(timer);
+							timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+							$("select option:contains(" + point.argument + ")").prop("selected", true);
+						},
+						legend: {
+							visible: true,
+						},
+						series: [{
+							type: "doughnut",
+							argumentField: "region"
+						}],
+						palette: xenonPalette
+					});
+				});
+				</script>
+				<div id="bar-9" style="height: 300px; width: 100%;"></div>
+			</div>
+		</div>
+	</div>
+	
+
+
 			</div>
 				
 			
@@ -256,7 +383,7 @@
 
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
-				var URL = "1NEhvrFwqwgSUrkHmUfPzsHeLA0PMDLcGGhdoZ1sBtbY"
+				var URL = "1OkpjX3nTllGzkwSkdPQSfw4FlAgayRl17VROwFruFRc"
 				Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
 			})
 				
@@ -317,6 +444,18 @@
 			
   
 			<div id="photogrid"></div>
+			
+			 
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<iframe width='100%' height='300' frameborder='0' src='https://abhinemani.cartodb.com/viz/fbcc032e-f782-11e4-af13-0e4fddd5de28/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 			 
 			

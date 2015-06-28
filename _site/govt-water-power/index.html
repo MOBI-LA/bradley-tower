@@ -7,7 +7,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>MOED &#8211; Mayoral Dashboard City of Los Angeles</title>
+    <title>City Government Water and Power &#8211; Mayoral Dashboard City of Los Angeles</title>
     <meta name="description" content="The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.">
     <meta name="author" content="">
 	
@@ -153,102 +153,12 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-			<h1 class="bg-info">MOED</h1>
+			<h1 class="bg-info">City Government Water and Power</h1>
 			<script>
 			var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
 			</script>
 			<div class="row">
 			    
-			<div class="col-sm-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Job Growth</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-							<div class="panel-body">	
-								<script type="text/javascript">
-									jQuery(document).ready(function($)
-									{
-										if( ! $.isFunction($.fn.dxChart))
-											return;
-										
-										var dataSource = [
-											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
-											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
-											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
-											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
-											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
-											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
-											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
-											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
-											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
-										];
-									
-										$("#bar-3").dxChart({
-											dataSource: dataSource,
-											commonSeriesSettings: {
-												argumentField: "year"
-											},
-											series: [
-												{ valueField: "losangeles", name: "Jobs in Los Angeles", color: "#40bbea" },
-												{ valueField: "angelenos", name: "Jobs for Angelenos", color: "#cc3f44" },
-											],
-											argumentAxis:{
-												grid:{
-													visible: true
-												}
-											},
-											tooltip:{
-												enabled: true
-											},
-											title: "",
-											legend: {
-												verticalAlignment: "bottom",
-												horizontalAlignment: "center"
-											},
-											commonPaneSettings: {
-												border:{
-													visible: true,
-													right: false
-												}	   
-											}
-										});
-									});
-								</script>
-								<div id="bar-3" style="height: 300px; width: 100%;"></div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-sm-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Building Permits</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-							<div class="panel-body">	
-								<iframe width='100%' height='300' frameborder='0' src='https://abhinemani.cartodb.com/viz/809222ea-c822-11e4-9df5-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>				
-							</div>
-						</div>
-					
-
-					</div>
 			</div>
 				
 			
@@ -256,7 +166,7 @@
 
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
-				var URL = "1NEhvrFwqwgSUrkHmUfPzsHeLA0PMDLcGGhdoZ1sBtbY"
+				var URL = "1V8rh2e2QsZHxK96Uqii5gSTX_KTAchgFjrGooNU5stw"
 				Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
 			})
 				
