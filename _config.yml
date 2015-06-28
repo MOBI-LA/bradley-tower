@@ -2,10 +2,10 @@
 title: City of Los Angeles Mayoral Dashboard
 email: "mayor.opendata@lacity.org"
 description: The Mayor's Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.
-baseurl: "/jekyll-dash"
+baseurl: "/elevator"
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: abhinemani
+github_username:  abhinemani
 
 # Build settings
 markdown: kramdown
