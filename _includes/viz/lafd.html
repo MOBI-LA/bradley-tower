@@ -1,6 +1,14 @@
+{% assign FDmonth = 'May' %}
+{% assign processing = 62 %}
+{% assign TurnoutFire = 73 %}
+{% assign TurnoutEMS = 72 %}
+{% assign TravelFire = 246 %}
+{% assign TravelEMS = 251 %}
+
+
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">LAFD Response Times (May '15)</h3>
+		<h3 class="panel-title">LAFD Response Times: {{ FDmonth }} '15</h3>
 		<div class="panel-options">
 			<a href="#" data-toggle="panel">
 				<span class="collapse-icon">&ndash;</span>
@@ -44,7 +52,7 @@
 							font: { size: 12 }
 						},
 						subtitle: {
-							text: '61 seconds (Over target: 60)',
+							text: '{{ processing }} seconds (Over target: 60)',
 							font: {
 								size: 10,
 								color: 'grey',
@@ -53,7 +61,7 @@
 						valueIndicator: {
 							color: 'red'
 						},
-						value: 62,
+						value: {{ processing }},
 						subvalues: [60]
 					}).dxCircularGauge('instance');
 				});
@@ -94,13 +102,13 @@
 							font: { size: 12 }
 						},
 						subtitle: {
-							text: '71 seconds (Under target: 80)',
+							text: '{{ TurnoutFire }} seconds (Under target: 80)',
 							font: {
 								size: 10,
 								color: 'grey',
 							},
 						},
-						value: 73,
+						value: {{ TurnoutFire }},
 						subvalues: [80]
 					}).dxCircularGauge('instance');
 				});
@@ -138,13 +146,13 @@
 							font: { size: 12 }
 						},
 						subtitle: {
-							text: '74 seconds (Over target: 60)',
+							text: '{{ TurnoutEMS }} seconds (Over target: 60)',
 							font: {
 								size: 10,
 								color: 'grey',
 							},
 						},
-						value: 72,
+						value: {{ TurnoutEMS }},
 						valueIndicator: {
 							color: 'red'
 						},
@@ -190,13 +198,13 @@
 							color: 'green'
 						},
 						subtitle: {
-							text: '246 seconds (Under target: 290)',
+							text: '{{ TravelFire }} seconds (Under target: 290)',
 							font: {
 								size: 10,
 								color: 'green',
 							},
 						},
-						value: 246,
+						value: {{ TravelFire }},
 						subvalues: [290]
 					}).dxCircularGauge('instance');
 					$("#gauge-2-randomize").on('click', function(ev)
@@ -247,13 +255,13 @@
 							color: 'red'
 						},
 						subtitle: {
-							text: '248 seconds (Over target: 240)',
+							text: '{{ TravelEMS }} seconds (Over target: 240)',
 							font: {
 								size: 10,
 								color: 'grey',
 							},
 						},
-						value: 251,
+						value: {{ TravelEMS }},
 						subvalues: [240]
 					}).dxCircularGauge('instance');
 					$("#gauge-2-randomize").on('click', function(ev)
