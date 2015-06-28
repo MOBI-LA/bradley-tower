@@ -6,14 +6,103 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Jun 2015 10:24:18 -0700</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2015 10:24:18 -0700</lastBuildDate>
+    <pubDate>Sun, 28 Jun 2015 11:04:49 -0700</pubDate>
+    <lastBuildDate>Sun, 28 Jun 2015 11:04:49 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>MOED</title>
         <description>
-</description>
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+						&lt;div class=&quot;panel panel-default&quot;&gt;
+							&lt;div class=&quot;panel-heading&quot;&gt;
+								&lt;h3 class=&quot;panel-title&quot;&gt;Job Growth&lt;/h3&gt;
+								&lt;div class=&quot;panel-options&quot;&gt;
+									&lt;a href=&quot;#&quot; data-toggle=&quot;panel&quot;&gt;
+										&lt;span class=&quot;collapse-icon&quot;&gt;&amp;ndash;&lt;/span&gt;
+										&lt;span class=&quot;expand-icon&quot;&gt;+&lt;/span&gt;
+									&lt;/a&gt;
+									&lt;a href=&quot;#&quot; data-toggle=&quot;remove&quot;&gt;
+										&amp;times;
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;	
+								&lt;script type=&quot;text/javascript&quot;&gt;
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										var dataSource = [
+											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
+											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
+											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
+											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
+											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
+											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
+											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
+											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
+											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
+										];
+									
+										$(&quot;#bar-3&quot;).dxChart({
+											dataSource: dataSource,
+											commonSeriesSettings: {
+												argumentField: &quot;year&quot;
+											},
+											series: [
+												{ valueField: &quot;losangeles&quot;, name: &quot;Jobs in Los Angeles&quot;, color: &quot;#40bbea&quot; },
+												{ valueField: &quot;angelenos&quot;, name: &quot;Jobs for Angelenos&quot;, color: &quot;#cc3f44&quot; },
+											],
+											argumentAxis:{
+												grid:{
+													visible: true
+												}
+											},
+											tooltip:{
+												enabled: true
+											},
+											title: &quot;&quot;,
+											legend: {
+												verticalAlignment: &quot;bottom&quot;,
+												horizontalAlignment: &quot;center&quot;
+											},
+											commonPaneSettings: {
+												border:{
+													visible: true,
+													right: false
+												}	   
+											}
+										});
+									});
+								&lt;/script&gt;
+								&lt;div id=&quot;bar-3&quot; style=&quot;height: 300px; width: 100%;&quot;&gt;&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-6&quot;&gt;
+						&lt;div class=&quot;panel panel-default&quot;&gt;
+							&lt;div class=&quot;panel-heading&quot;&gt;
+								&lt;h3 class=&quot;panel-title&quot;&gt;Building Permits&lt;/h3&gt;
+								&lt;div class=&quot;panel-options&quot;&gt;
+									&lt;a href=&quot;#&quot; data-toggle=&quot;panel&quot;&gt;
+										&lt;span class=&quot;collapse-icon&quot;&gt;&amp;ndash;&lt;/span&gt;
+										&lt;span class=&quot;expand-icon&quot;&gt;+&lt;/span&gt;
+									&lt;/a&gt;
+									&lt;a href=&quot;#&quot; data-toggle=&quot;remove&quot;&gt;
+										&amp;times;
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;	
+								&lt;iframe width=&#39;100%&#39; height=&#39;300&#39; frameborder=&#39;0&#39; src=&#39;https://abhinemani.cartodb.com/viz/809222ea-c822-11e4-9df5-0e9d821ea90d/embed_map&#39; allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;				
+							&lt;/div&gt;
+						&lt;/div&gt;
+					
+
+					&lt;/div&gt;</description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
         <link>http://yourdomain.com/economy/2015/06/28/moed.html</link>
         <guid isPermaLink="true">http://yourdomain.com/economy/2015/06/28/moed.html</guid>
@@ -25,8 +114,128 @@
     
       <item>
         <title>MOCS</title>
-        <description>
-</description>
+        <description>						&lt;div class=&quot;panel panel-default&quot;&gt;
+								&lt;div class=&quot;panel-body&quot;&gt;
+									&lt;div class=&quot;col-sm-6&quot;&gt;
+							
+									&lt;script type=&quot;text/javascript&quot;&gt;
+										jQuery(document).ready(function($)
+										{
+											if( ! $.isFunction($.fn.dxChart))
+												return;
+									
+											var dataSource = [
+			{month: &#39;July 2013&#39;, waittime: 6.08, goal: 3 },
+			{month: &#39;August 2013&#39;, waittime: 14.55 },
+			{month: &#39;September 2013&#39;, waittime: 17.34 },
+			{month: &#39;October 2013&#39;, waittime: 25.89 },
+			{month: &#39;November 2013&#39;, waittime: 31.58 },
+			{month: &#39;December 2013&#39;, waittime: 16.91 },
+			{month: &#39;January 2014&#39;, waittime: 20.09 },
+			{month: &#39;February 2014&#39;, waittime: 31.59 },
+			{month: &#39;March 2014&#39;, waittime: 33.52 },
+			{month: &#39;April 2014&#39;, waittime: 21.01 },
+			{month: &#39;May 2014&#39;, waittime: 18.31 },
+			{month: &#39;June 2014&#39;, waittime: 32.9 },
+			{month: &#39;July 2014&#39;, waittime: 40.43 },
+			{month: &#39;August 2014&#39;, waittime: 39.65 },
+			{month: &#39;September 2014&#39;, waittime: 15.66 },
+			{month: &#39;October 2014&#39;, waittime: 8.78, goal: 3 },
+			{month: &#39;November 2014&#39;, waittime: 4.23, goal: 3 },
+			{month: &#39;December 2014&#39;, waittime: 5.72, goal: 3 },
+			{month: &#39;January 2015&#39;, waittime: 3.29, goal: 3 },
+			{month: &#39;February 2015&#39;, waittime: 5.95, goal: 3 },
+			{month: &#39;March 2015&#39;, waittime: 10.1, goal: 3 },
+
+											];
+								
+											$(&quot;#bar-12&quot;).dxChart({
+												dataSource: dataSource,
+												commonSeriesSettings: {
+													argumentField: &quot;month&quot;
+												},
+												series: [
+													{ valueField: &quot;waittime&quot;, name: &quot;DWP Wait Times (Minutes)&quot;, color: &quot;#40bbea&quot; },
+													{ valueField: &quot;goal&quot;, name: &quot;Goal&quot;, color: &quot;#990000&quot; },
+										
+												],
+												argumentAxis:{
+													grid:{
+														visible: true
+													}
+												},
+												tooltip:{
+													enabled: true
+												},
+												title: &quot;DWP Call Wait Time&quot;,
+												legend: {
+													verticalAlignment: &quot;bottom&quot;,
+													horizontalAlignment: &quot;center&quot;
+												},
+												commonPaneSettings: {
+													border:{
+														visible: true,
+														right: false
+													}	   
+												}
+											});
+										});
+									&lt;/script&gt;
+									&lt;div id=&quot;bar-12&quot; style=&quot;height: 300px; width: 100%;&quot;&gt;&lt;/div&gt;
+					
+					
+						&lt;/div&gt;
+						&lt;div class=&quot;col-sm-6&quot;&gt;
+							&lt;script type=&quot;text/javascript&quot;&gt;
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+							
+								var dataSource = [
+									{region: &quot;New Starts Grants: Purple Line Phase 1&quot;, val: 1250000000},
+									{region: &quot;New Starts Grants: Regional Connector&quot;, val: 670000000},
+									{region: &quot;TIFIA: Purple Line Phase 1&quot;, val: 856000000},
+									{region: &quot;TIFIA: Regional Connector&quot;, val: 160000000}
+								], timer;
+						
+								$(&quot;#bar-8&quot;).dxPieChart({
+									dataSource: dataSource,
+									title: &quot;MTA Money Raised ($3B)&quot;,
+									tooltip: {
+										enabled: true,
+									  	format:&quot;millions&quot;,
+										customizeText: function() { 
+											return this.argumentText + &quot;&lt;br/&gt;&quot; + this.valueText;
+										}
+									},
+									size: {
+										height: 280
+									},
+									pointClick: function(point) {
+										point.showTooltip();
+										clearTimeout(timer);
+										timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+										$(&quot;select option:contains(&quot; + point.argument + &quot;)&quot;).prop(&quot;selected&quot;, true);
+									},
+									legend: {
+										visible: true,
+
+									},  
+									series: [{
+										type: &quot;doughnut&quot;,
+										argumentField: &quot;region&quot;
+									}],
+												palette: xenonPalette
+							
+								});
+						
+							});
+							&lt;/script&gt;
+							&lt;div id=&quot;bar-8&quot; style=&quot;height: 300px; width: 100%;&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;/div&gt;</description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
         <link>http://yourdomain.com/management/2015/06/28/mocs.html</link>
         <guid isPermaLink="true">http://yourdomain.com/management/2015/06/28/mocs.html</guid>
@@ -37,28 +246,386 @@
       </item>
     
       <item>
-        <title>HSPS</title>
-        <description>
-</description>
-        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
-        <link>http://yourdomain.com/safety/2015/06/28/mobi.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/safety/2015/06/28/mobi.html</guid>
-        
-        
-        <category>safety</category>
-        
-      </item>
-    
-      <item>
         <title>MOBI</title>
-        <description>
-</description>
+        <description>			&lt;script type=&quot;text/javascript&quot;&gt;
+				var sample_notification;
+				
+					jQuery(document).ready(function($)
+					{	
+						
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					
+					// Charts
+					var xenonPalette = [&#39;#68b828&#39;,&#39;#7c38bc&#39;,&#39;#0e62c7&#39;,&#39;#fcd036&#39;,&#39;#4fcdfc&#39;,&#39;#00b19d&#39;,&#39;#ff6264&#39;,&#39;#f7aa47&#39;];
+					
+					// Pageviews Visitors Chart
+					var i = 0,
+						line_chart_data_source = [
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 6, part2: 6 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+							
+							
+					];
+					
+					$(&quot;#pageviews-visitors-chart&quot;).dxChart({
+						dataSource: line_chart_data_source,
+						commonSeriesSettings: {
+							argumentField: &quot;id&quot;,
+							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: &#39;inherit&#39;} },
+							line: {width: 1, hoverStyle: {width: 1}}
+						},
+						series: [
+							{ valueField: &quot;part1&quot;, name: &quot;Pageviews&quot;, color: &quot;#7c38bc&quot; },
+							{ valueField: &quot;part2&quot;, name: &quot;Visitors&quot;, color: &quot;#00b19d&quot; },
+						],
+						legend: {
+							position: &#39;inside&#39;,
+							paddingLeftRight: 5
+						},
+						commonAxisSettings: {
+							label: {
+								visible: false
+							},
+							grid: {
+								visible: true,
+								color: &#39;#f9f9f9&#39;
+							}
+						},
+						valueAxis: {
+							max: 7
+						},
+						argumentAxis: {
+					        valueMarginsEnabled: false
+					    },
+					});					
+					
+					// Resize charts
+					$(window).on(&#39;xenon.resize&#39;, function()
+					{
+						$(&quot;#pageviews-visitors-chart&quot;).data(&quot;dxChart&quot;).render();
+					});
+					
+				});
+			&lt;/script&gt;
+				&lt;div class=&quot;col-sm-12&quot;&gt;
+					&lt;div class=&quot;chart-item-bg&quot;&gt;
+						&lt;div class=&quot;chart-label&quot;&gt;
+							&lt;div class=&quot;h3 text-bold&quot;  data-count=&quot;this&quot; data-from=&quot;0.00&quot; data-to=&quot;320602&quot; data-suffix=&quot; May&quot; data-duration=&quot;1&quot;&gt;0.00%&lt;/div&gt;
+							&lt;span class=&quot;text-medium text-muted&quot;&gt;Unique visitors: LACity.org&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;pageviews-visitors-chart&quot; style=&quot;height: 220px;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;</description>
         <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
         <link>http://yourdomain.com/management/2015/06/28/mobi.html</link>
         <guid isPermaLink="true">http://yourdomain.com/management/2015/06/28/mobi.html</guid>
         
         
         <category>management</category>
+        
+      </item>
+    
+      <item>
+        <title>HSPS</title>
+        <description>&lt;div class=&quot;panel panel-default&quot;&gt;
+	&lt;div class=&quot;panel-heading&quot;&gt;
+		&lt;h3 class=&quot;panel-title&quot;&gt;LAFD Response Times (May &#39;15)&lt;/h3&gt;
+		&lt;div class=&quot;panel-options&quot;&gt;
+			&lt;a href=&quot;#&quot; data-toggle=&quot;panel&quot;&gt;
+				&lt;span class=&quot;collapse-icon&quot;&gt;&amp;ndash;&lt;/span&gt;
+				&lt;span class=&quot;expand-icon&quot;&gt;+&lt;/span&gt;
+			&lt;/a&gt;
+			&lt;a href=&quot;#&quot; data-toggle=&quot;remove&quot;&gt;
+				&amp;times;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $(&#39;#gauge-2&#39;).dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 80,
+							majorTick: {
+								color: &#39;#1A1100&#39;,
+								tickInterval: 5
+							},
+							minorTick: {
+								color: &#39;#1A1100&#39;,
+								visible: true,
+								tickInterval: 2
+							}
+						},
+						rangeContainer: {
+							backgroundColor: &#39;none&#39;
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: &#39;EMD Call Processing Time&#39;,
+							font: { size: 12 }
+						},
+						subtitle: {
+							text: &#39;61 seconds (Over target: 60)&#39;,
+							font: {
+								size: 10,
+								color: &#39;grey&#39;,
+							},
+						},
+						valueIndicator: {
+							color: &#39;red&#39;
+						},
+						value: 62,
+						subvalues: [60]
+					}).dxCircularGauge(&#39;instance&#39;);
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;gauge-2&quot; style=&quot;height: 250px; margin: 0 30px;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $(&#39;#gauge-3&#39;).dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 90,
+							majorTick: {
+								color: &#39;#1A1100&#39;,
+								tickInterval: 5
+							},
+							minorTick: {
+								color: &#39;#1A1100&#39;,
+								visible: true,
+								tickInterval: 2
+							}
+						},
+						rangeContainer: {
+							backgroundColor: &#39;none&#39;
+						},
+						valueIndicator: {
+							color: &#39;green&#39;
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: &#39;Turnout Time Non-EMS&#39;,
+							font: { size: 12 }
+						},
+						subtitle: {
+							text: &#39;71 seconds (Under target: 80)&#39;,
+							font: {
+								size: 10,
+								color: &#39;grey&#39;,
+							},
+						},
+						value: 73,
+						subvalues: [80]
+					}).dxCircularGauge(&#39;instance&#39;);
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;gauge-3&quot; style=&quot;height: 250px; margin: 0 30px;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $(&#39;#gauge-4&#39;).dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 90,
+							majorTick: {
+								color: &#39;#1A1100&#39;,
+								tickInterval: 5
+							},
+							minorTick: {
+								color: &#39;#1A1100&#39;,
+								visible: true,
+								tickInterval: 2
+							}
+						},
+						tooltip: {
+							enabled: true,
+						},
+						rangeContainer: {
+							backgroundColor: &#39;none&#39;
+						},
+						title: {
+							text: &#39;Turnout Time (EMS)&#39;,
+							font: { size: 12 }
+						},
+						subtitle: {
+							text: &#39;74 seconds (Over target: 60)&#39;,
+							font: {
+								size: 10,
+								color: &#39;grey&#39;,
+							},
+						},
+						value: 72,
+						valueIndicator: {
+							color: &#39;red&#39;
+						},
+						subvalues: [60]
+					}).dxCircularGauge(&#39;instance&#39;);
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;gauge-4&quot; style=&quot;height: 250px; margin: 0 30px;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row&quot; style=&quot;margin-top: 10px;&quot;&gt;
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $(&#39;#gauge-5&#39;).dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 300,
+							majorTick: {
+								color: &#39;#1A1100&#39;,
+								tickInterval: 30
+							},
+							minorTick: {
+								color: &#39;#1A1100&#39;,
+								visible: true,
+								tickInterval: 5
+							}
+						},
+						rangeContainer: {
+							backgroundColor: &#39;none&#39;
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: &#39;Travel Time Non-EMS&#39;,
+							font: { size: 12 }
+						},
+						valueIndicator: {
+							color: &#39;green&#39;
+						},
+						subtitle: {
+							text: &#39;246 seconds (Under target: 290)&#39;,
+							font: {
+								size: 10,
+								color: &#39;green&#39;,
+							},
+						},
+						value: 246,
+						subvalues: [290]
+					}).dxCircularGauge(&#39;instance&#39;);
+					$(&quot;#gauge-2-randomize&quot;).on(&#39;click&#39;, function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(between(0, 1000));
+					});
+					$(&quot;#gauge-2-res&quot;).on(&#39;click&#39;, function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(0);
+					});
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;gauge-5&quot; style=&quot;height: 250px; margin: 0 30px;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $(&#39;#gauge-6&#39;).dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 300,
+							majorTick: {
+								color: &#39;#1A1100&#39;,
+								tickInterval: 30
+							},
+							minorTick: {
+								color: &#39;#1A1100&#39;,
+								visible: true,
+								tickInterval: 5
+							}
+						},
+						rangeContainer: {
+							backgroundColor: &#39;none&#39;
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: &#39;Travel Time EMS&#39;,
+							font: { size: 12 }
+						},
+						valueIndicator: {
+							color: &#39;red&#39;
+						},
+						subtitle: {
+							text: &#39;248 seconds (Over target: 240)&#39;,
+							font: {
+								size: 10,
+								color: &#39;grey&#39;,
+							},
+						},
+						value: 251,
+						subvalues: [240]
+					}).dxCircularGauge(&#39;instance&#39;);
+					$(&quot;#gauge-2-randomize&quot;).on(&#39;click&#39;, function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(between(0, 1000));
+					});
+					$(&quot;#gauge-2-res&quot;).on(&#39;click&#39;, function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(0);
+					});
+				});
+				&lt;/script&gt;
+				&lt;div id=&quot;gauge-6&quot; style=&quot;height: 250px; margin: 0 30px;&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Sun, 28 Jun 2015 01:12:25 -0700</pubDate>
+        <link>http://yourdomain.com/safety/2015/06/28/hsps.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/safety/2015/06/28/hsps.html</guid>
+        
+        
+        <category>safety</category>
         
       </item>
     

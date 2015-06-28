@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -38,9 +38,9 @@
 
 </head>
 
-  <body>
+<body>
 
-    	<nav class="navbar horizontal-menu navbar-fixed-top navbar-minimal"><!-- set fixed position by adding class "navbar-fixed-top" -->
+		<nav class="navbar horizontal-menu navbar-fixed-top navbar-minimal"><!-- set fixed position by adding class "navbar-fixed-top" -->
 		
 		<div class="navbar-inner">
 		
@@ -85,16 +85,16 @@
 			      </li>
 			    
 			      <li>
-			        <a href="/safety/2015/06/28/mobi.html">
+			        <a href="/management/2015/06/28/mobi.html">
 						<i class="linecons-cog"></i>
-						HSPS
+						MOBI
 					</a>
 			      </li>
 			    
 			      <li>
-			        <a href="/management/2015/06/28/mobi.html">
+			        <a href="/safety/2015/06/28/hsps.html">
 						<i class="linecons-cog"></i>
-						MOBI
+						HSPS
 					</a>
 			      </li>
 			    
@@ -107,14 +107,11 @@
 		</div>
 		
 	</nav>
+
 	<div class="page-container">
-		<!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
-			
-		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
-		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
-		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
+			
 			<div class="row">
 				<div class="col-sm-12"> <div class="panel panel-default"> 
 					<div class="panel-heading">Mayor's Dashboard: City of Los Angeles</div> 
@@ -126,70 +123,671 @@
 						</div> 
 					</div> 
 				</div> 
-			</div> 
-		</div> 
-	</div>
-      </div>
-    </div>
-
-    			
-			<!-- Main Footer -->
-			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
-			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
-			<!-- Or class "fixed" to  always fix the footer to the end of page -->
-			<footer class="main-footer sticky footer-type-1">
-				
-				<div class="footer-inner">
-				
-					<!-- Add your copyright text here -->
-					<div class="footer-text">
-						&copy; 2015 
-						<strong>City of Los Angeles</strong> | <a href="https://github.com/datala/bradley-tower">Github</a>
-						
-					</div>
-					
-					
-					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
-					<div class="go-up">
-					
-						<a href="#" rel="go-top">
-							<i class="fa-angle-up"></i>
-						</a>
-						
-					</div>
-					
-				</div>
-				
-			</footer>
-		</div>
-	
+			</div>
 			
+			<script>
+			var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
+			</script>
+		
+			<div class="row">
+				
+			<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Job Growth</h3>
+								<div class="panel-options">
+									<a href="#" data-toggle="panel">
+										<span class="collapse-icon">&ndash;</span>
+										<span class="expand-icon">+</span>
+									</a>
+									<a href="#" data-toggle="remove">
+										&times;
+									</a>
+								</div>
+							</div>
+							<div class="panel-body">	
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										var dataSource = [
+											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
+											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
+											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
+											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
+											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
+											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
+											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
+											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
+											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
+										];
+									
+										$("#bar-3").dxChart({
+											dataSource: dataSource,
+											commonSeriesSettings: {
+												argumentField: "year"
+											},
+											series: [
+												{ valueField: "losangeles", name: "Jobs in Los Angeles", color: "#40bbea" },
+												{ valueField: "angelenos", name: "Jobs for Angelenos", color: "#cc3f44" },
+											],
+											argumentAxis:{
+												grid:{
+													visible: true
+												}
+											},
+											tooltip:{
+												enabled: true
+											},
+											title: "",
+											legend: {
+												verticalAlignment: "bottom",
+												horizontalAlignment: "center"
+											},
+											commonPaneSettings: {
+												border:{
+													visible: true,
+													right: false
+												}	   
+											}
+										});
+									});
+								</script>
+								<div id="bar-3" style="height: 300px; width: 100%;"></div>
+							</div>
+						</div>
+						
+					</div>
+									<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Building Permits</h3>
+								<div class="panel-options">
+									<a href="#" data-toggle="panel">
+										<span class="collapse-icon">&ndash;</span>
+										<span class="expand-icon">+</span>
+									</a>
+									<a href="#" data-toggle="remove">
+										&times;
+									</a>
+								</div>
+							</div>
+							<div class="panel-body">	
+								<iframe width='100%' height='300' frameborder='0' src='https://abhinemani.cartodb.com/viz/809222ea-c822-11e4-9df5-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>				
+							</div>
+						</div>
+					
 
+					</div>
+			</div>
+			<div class="row">
+										<div class="panel panel-default">
+								<div class="panel-body">
+									<div class="col-sm-6">
+							
+									<script type="text/javascript">
+										jQuery(document).ready(function($)
+										{
+											if( ! $.isFunction($.fn.dxChart))
+												return;
+									
+											var dataSource = [
+			{month: 'July 2013', waittime: 6.08, goal: 3 },
+			{month: 'August 2013', waittime: 14.55 },
+			{month: 'September 2013', waittime: 17.34 },
+			{month: 'October 2013', waittime: 25.89 },
+			{month: 'November 2013', waittime: 31.58 },
+			{month: 'December 2013', waittime: 16.91 },
+			{month: 'January 2014', waittime: 20.09 },
+			{month: 'February 2014', waittime: 31.59 },
+			{month: 'March 2014', waittime: 33.52 },
+			{month: 'April 2014', waittime: 21.01 },
+			{month: 'May 2014', waittime: 18.31 },
+			{month: 'June 2014', waittime: 32.9 },
+			{month: 'July 2014', waittime: 40.43 },
+			{month: 'August 2014', waittime: 39.65 },
+			{month: 'September 2014', waittime: 15.66 },
+			{month: 'October 2014', waittime: 8.78, goal: 3 },
+			{month: 'November 2014', waittime: 4.23, goal: 3 },
+			{month: 'December 2014', waittime: 5.72, goal: 3 },
+			{month: 'January 2015', waittime: 3.29, goal: 3 },
+			{month: 'February 2015', waittime: 5.95, goal: 3 },
+			{month: 'March 2015', waittime: 10.1, goal: 3 },
+
+											];
+								
+											$("#bar-12").dxChart({
+												dataSource: dataSource,
+												commonSeriesSettings: {
+													argumentField: "month"
+												},
+												series: [
+													{ valueField: "waittime", name: "DWP Wait Times (Minutes)", color: "#40bbea" },
+													{ valueField: "goal", name: "Goal", color: "#990000" },
+										
+												],
+												argumentAxis:{
+													grid:{
+														visible: true
+													}
+												},
+												tooltip:{
+													enabled: true
+												},
+												title: "DWP Call Wait Time",
+												legend: {
+													verticalAlignment: "bottom",
+													horizontalAlignment: "center"
+												},
+												commonPaneSettings: {
+													border:{
+														visible: true,
+														right: false
+													}	   
+												}
+											});
+										});
+									</script>
+									<div id="bar-12" style="height: 300px; width: 100%;"></div>
+					
+					
+						</div>
+						<div class="col-sm-6">
+							<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+							
+								var dataSource = [
+									{region: "New Starts Grants: Purple Line Phase 1", val: 1250000000},
+									{region: "New Starts Grants: Regional Connector", val: 670000000},
+									{region: "TIFIA: Purple Line Phase 1", val: 856000000},
+									{region: "TIFIA: Regional Connector", val: 160000000}
+								], timer;
+						
+								$("#bar-8").dxPieChart({
+									dataSource: dataSource,
+									title: "MTA Money Raised ($3B)",
+									tooltip: {
+										enabled: true,
+									  	format:"millions",
+										customizeText: function() { 
+											return this.argumentText + "<br/>" + this.valueText;
+										}
+									},
+									size: {
+										height: 280
+									},
+									pointClick: function(point) {
+										point.showTooltip();
+										clearTimeout(timer);
+										timer = setTimeout(function() { point.hideTooltip(); }, 2000);
+										$("select option:contains(" + point.argument + ")").prop("selected", true);
+									},
+									legend: {
+										visible: true,
+
+									},  
+									series: [{
+										type: "doughnut",
+										argumentField: "region"
+									}],
+												palette: xenonPalette
+							
+								});
+						
+							});
+							</script>
+							<div id="bar-8" style="height: 300px; width: 100%;"></div>
+						</div>
+
+						</div>			
+			</div>
+			<div class="row">
+							<script type="text/javascript">
+				var sample_notification;
+				
+					jQuery(document).ready(function($)
+					{	
+						
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					
+					// Charts
+					var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
+					
+					// Pageviews Visitors Chart
+					var i = 0,
+						line_chart_data_source = [
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 3 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 6, part2: 6 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 4, part2: 4 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+						{ id: ++i, part1: 5, part2: 5 },
+							
+							
+					];
+					
+					$("#pageviews-visitors-chart").dxChart({
+						dataSource: line_chart_data_source,
+						commonSeriesSettings: {
+							argumentField: "id",
+							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: 'inherit'} },
+							line: {width: 1, hoverStyle: {width: 1}}
+						},
+						series: [
+							{ valueField: "part1", name: "Pageviews", color: "#7c38bc" },
+							{ valueField: "part2", name: "Visitors", color: "#00b19d" },
+						],
+						legend: {
+							position: 'inside',
+							paddingLeftRight: 5
+						},
+						commonAxisSettings: {
+							label: {
+								visible: false
+							},
+							grid: {
+								visible: true,
+								color: '#f9f9f9'
+							}
+						},
+						valueAxis: {
+							max: 7
+						},
+						argumentAxis: {
+					        valueMarginsEnabled: false
+					    },
+					});					
+					
+					// Resize charts
+					$(window).on('xenon.resize', function()
+					{
+						$("#pageviews-visitors-chart").data("dxChart").render();
+					});
+					
+				});
+			</script>
+				<div class="col-sm-12">
+					<div class="chart-item-bg">
+						<div class="chart-label">
+							<div class="h3 text-bold"  data-count="this" data-from="0.00" data-to="320602" data-suffix=" May" data-duration="1">0.00%</div>
+							<span class="text-medium text-muted">Unique visitors: LACity.org</span>
+						</div>
+						<div id="pageviews-visitors-chart" style="height: 220px;"></div>
+					</div>
+				</div>			
+			</div>
+			<div class="row">
+				<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">LAFD Response Times (May '15)</h3>
+		<div class="panel-options">
+			<a href="#" data-toggle="panel">
+				<span class="collapse-icon">&ndash;</span>
+				<span class="expand-icon">+</span>
+			</a>
+			<a href="#" data-toggle="remove">
+				&times;
+			</a>
+		</div>
 	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-sm-4">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $('#gauge-2').dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 80,
+							majorTick: {
+								color: '#1A1100',
+								tickInterval: 5
+							},
+							minorTick: {
+								color: '#1A1100',
+								visible: true,
+								tickInterval: 2
+							}
+						},
+						rangeContainer: {
+							backgroundColor: 'none'
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: 'EMD Call Processing Time',
+							font: { size: 12 }
+						},
+						subtitle: {
+							text: '61 seconds (Over target: 60)',
+							font: {
+								size: 10,
+								color: 'grey',
+							},
+						},
+						valueIndicator: {
+							color: 'red'
+						},
+						value: 62,
+						subvalues: [60]
+					}).dxCircularGauge('instance');
+				});
+				</script>
+				<div id="gauge-2" style="height: 250px; margin: 0 30px;"></div>
+			</div>
+			<div class="col-sm-4">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $('#gauge-3').dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 90,
+							majorTick: {
+								color: '#1A1100',
+								tickInterval: 5
+							},
+							minorTick: {
+								color: '#1A1100',
+								visible: true,
+								tickInterval: 2
+							}
+						},
+						rangeContainer: {
+							backgroundColor: 'none'
+						},
+						valueIndicator: {
+							color: 'green'
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: 'Turnout Time Non-EMS',
+							font: { size: 12 }
+						},
+						subtitle: {
+							text: '71 seconds (Under target: 80)',
+							font: {
+								size: 10,
+								color: 'grey',
+							},
+						},
+						value: 73,
+						subvalues: [80]
+					}).dxCircularGauge('instance');
+				});
+				</script>
+				<div id="gauge-3" style="height: 250px; margin: 0 30px;"></div>
+			</div>
+			<div class="col-sm-4">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $('#gauge-4').dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 90,
+							majorTick: {
+								color: '#1A1100',
+								tickInterval: 5
+							},
+							minorTick: {
+								color: '#1A1100',
+								visible: true,
+								tickInterval: 2
+							}
+						},
+						tooltip: {
+							enabled: true,
+						},
+						rangeContainer: {
+							backgroundColor: 'none'
+						},
+						title: {
+							text: 'Turnout Time (EMS)',
+							font: { size: 12 }
+						},
+						subtitle: {
+							text: '74 seconds (Over target: 60)',
+							font: {
+								size: 10,
+								color: 'grey',
+							},
+						},
+						value: 72,
+						valueIndicator: {
+							color: 'red'
+						},
+						subvalues: [60]
+					}).dxCircularGauge('instance');
+				});
+				</script>
+				<div id="gauge-4" style="height: 250px; margin: 0 30px;"></div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 10px;">
+			<div class="col-sm-6">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $('#gauge-5').dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 300,
+							majorTick: {
+								color: '#1A1100',
+								tickInterval: 30
+							},
+							minorTick: {
+								color: '#1A1100',
+								visible: true,
+								tickInterval: 5
+							}
+						},
+						rangeContainer: {
+							backgroundColor: 'none'
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: 'Travel Time Non-EMS',
+							font: { size: 12 }
+						},
+						valueIndicator: {
+							color: 'green'
+						},
+						subtitle: {
+							text: '246 seconds (Under target: 290)',
+							font: {
+								size: 10,
+								color: 'green',
+							},
+						},
+						value: 246,
+						subvalues: [290]
+					}).dxCircularGauge('instance');
+					$("#gauge-2-randomize").on('click', function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(between(0, 1000));
+					});
+					$("#gauge-2-res").on('click', function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(0);
+					});
+				});
+				</script>
+				<div id="gauge-5" style="height: 250px; margin: 0 30px;"></div>
+			</div>
+			<div class="col-sm-6">
+				<script type="text/javascript">
+				jQuery(document).ready(function($)
+				{
+					if( ! $.isFunction($.fn.dxChart))
+						return;
+					var gauge = $('#gauge-6').dxCircularGauge({
+						scale: {
+							startValue: 0,
+							endValue: 300,
+							majorTick: {
+								color: '#1A1100',
+								tickInterval: 30
+							},
+							minorTick: {
+								color: '#1A1100',
+								visible: true,
+								tickInterval: 5
+							}
+						},
+						rangeContainer: {
+							backgroundColor: 'none'
+						},
+						tooltip: {
+							enabled: true,
+						},
+						title: {
+							text: 'Travel Time EMS',
+							font: { size: 12 }
+						},
+						valueIndicator: {
+							color: 'red'
+						},
+						subtitle: {
+							text: '248 seconds (Over target: 240)',
+							font: {
+								size: 10,
+								color: 'grey',
+							},
+						},
+						value: 251,
+						subvalues: [240]
+					}).dxCircularGauge('instance');
+					$("#gauge-2-randomize").on('click', function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(between(0, 1000));
+					});
+					$("#gauge-2-res").on('click', function(ev)
+					{
+						ev.preventDefault();
+						gauge.value(0);
+					});
+				});
+				</script>
+				<div id="gauge-6" style="height: 250px; margin: 0 30px;"></div>
+			</div>
+		</div>
+	</div>
+</div>			
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Crime</h3>
+			<div class="panel-options">
+				<a href="#" data-toggle="panel">
+					<span class="collapse-icon">&ndash;</span>
+					<span class="expand-icon">+</span>
+				</a>
+				<a href="#" data-toggle="remove">
+					&times;
+				</a>
+			</div>
+		</div>
+		<div class="panel-body">
+			<iframe width='100%' height='300' frameborder='0' src='http://abhinemani.cartodb.com/viz/db2706d4-bd74-11e4-9914-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		</div>
+	</div>
+</div>	
+			</div> 
+			
+			
+<footer class="main-footer sticky footer-type-1">
+				
+	<div class="footer-inner">
+				
+		<!-- Add your copyright text here -->
+		<div class="footer-text">
+			&copy; 2015 
+			<strong>City of Los Angeles</strong> | <a href="https://github.com/datala/bradley-tower">Github</a>
+						
+		</div>
+					
+					
+		<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+		<div class="go-up">
+					
+			<a href="#" rel="go-top">
+				<i class="fa-angle-up"></i>
+			</a>
+						
+		</div>
+					
+	</div>
+				
+</footer>
+
 	
-	<!-- Page Loading Overlay -->
-	<div class="page-loading-overlay">
-		<div class="loader-2"></div>
+<!-- Page Loading Overlay -->
+<div class="page-loading-overlay">
+	<div class="loader-2"></div>
+</div>
+<!-- Bottom Scripts -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/resizeable.js"></script>
+<script src="/js/joinable.js"></script>
+<script src="/js/xenon-api.js"></script>
+<script src="/js/xenon-toggles.js"></script>
+
+
+<!-- Imported scripts on this page -->
+<script src="/js/xenon-widgets.js"></script>
+<script src="/js/devexpress-web-14.1/js/globalize.min.js"></script>
+<script src="/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
+<script src="/js/toastr/toastr.min.js"></script>
+
+
+<!-- JavaScripts initializations and stuff -->
+<script src="/js/xenon-custom.js"></script>
+
+		</div>
+
 	</div>
-	<!-- Bottom Scripts -->
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/TweenMax.min.js"></script>
-	<script src="/js/resizeable.js"></script>
-	<script src="/js/joinable.js"></script>
-	<script src="/js/xenon-api.js"></script>
-	<script src="/js/xenon-toggles.js"></script>
 
-
-	<!-- Imported scripts on this page -->
-	<script src="/js/xenon-widgets.js"></script>
-	<script src="/js/devexpress-web-14.1/js/globalize.min.js"></script>
-	<script src="/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
-	<script src="/js/toastr/toastr.min.js"></script>
-
-
-	<!-- JavaScripts initializations and stuff -->
-	<script src="/js/xenon-custom.js"></script>
-
-  </body>
+</body>
 
 </html>

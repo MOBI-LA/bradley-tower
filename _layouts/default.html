@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+	{% include header.html %}
+
 	<div class="page-container">
-		<!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
-			
-		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
-		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
-		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
+			
 			<div class="row">
 				<div class="col-sm-12"> <div class="panel panel-default"> 
 					<div class="panel-heading">Mayor's Dashboard: City of Los Angeles</div> 
@@ -25,14 +22,35 @@
 						</div> 
 					</div> 
 				</div> 
+			</div>
+			
+			<script>
+			var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
+			</script>
+		
+			<div class="row">
+				{% include jobs.html %}
+				{% include permits.html %}
+			</div>
+			<div class="row">
+				{% include dwp-mta.html %}			
+			</div>
+			<div class="row">
+				{% include web.html %}			
+			</div>
+			<div class="row">
+				{% include lafd.html %}			
+			</div>
+			<div class="row">
+				{% include lapd.html %}
 			</div> 
-		</div> 
+			
+			{% include footer.html %}
+
+		</div>
+
 	</div>
-      </div>
-    </div>
 
-    {% include footer.html %}
-
-  </body>
+</body>
 
 </html>

@@ -1,0 +1,70 @@
+
+			<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Job Growth</h3>
+								<div class="panel-options">
+									<a href="#" data-toggle="panel">
+										<span class="collapse-icon">&ndash;</span>
+										<span class="expand-icon">+</span>
+									</a>
+									<a href="#" data-toggle="remove">
+										&times;
+									</a>
+								</div>
+							</div>
+							<div class="panel-body">	
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										var dataSource = [
+											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
+											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
+											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
+											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
+											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
+											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
+											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
+											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
+											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
+										];
+									
+										$("#bar-3").dxChart({
+											dataSource: dataSource,
+											commonSeriesSettings: {
+												argumentField: "year"
+											},
+											series: [
+												{ valueField: "losangeles", name: "Jobs in Los Angeles", color: "#40bbea" },
+												{ valueField: "angelenos", name: "Jobs for Angelenos", color: "#cc3f44" },
+											],
+											argumentAxis:{
+												grid:{
+													visible: true
+												}
+											},
+											tooltip:{
+												enabled: true
+											},
+											title: "",
+											legend: {
+												verticalAlignment: "bottom",
+												horizontalAlignment: "center"
+											},
+											commonPaneSettings: {
+												border:{
+													visible: true,
+													right: false
+												}	   
+											}
+										});
+									});
+								</script>
+								<div id="bar-3" style="height: 300px; width: 100%;"></div>
+							</div>
+						</div>
+						
+					</div>
