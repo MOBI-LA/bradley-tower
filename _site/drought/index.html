@@ -25,7 +25,7 @@
 	<link rel="apple-touch-icon" type="image/png" href="/img/57x57.png"><!-- iPhone -->
 	<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/img/72x72.png"><!-- iPad -->
 	<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/img/114x114.png"><!-- iPhone4 -->
-	<link rel="icon" type="image/png" href="/144x114.png"><!-- Opera Speed Dial, at least 144×114 px -->
+	<link rel="icon" type="image/png" href="/img/144x114.png"><!-- Opera Speed Dial, at least 144×114 px -->
 
 	<script src="/js/jquery-1.11.1.min.js"></script>
     <script type='text/javascript' src='/js/sheetsee.js'></script>
@@ -160,6 +160,122 @@
 			</script>
 			<div class="row">
 			    
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="col-sm-12">
+							
+			<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
+				var dataSource = [
+					{month: 'June', waittime: 51320.9},
+					{month: 'July', waittime: 263203.36},
+					{month: 'August', waittime: 96585},
+					{month: 'September', waittime: 402304.5},
+					{month: 'October', waittime: 361487.45},
+					{month: 'November', waittime: 126889.7},
+					{month: 'December', waittime: 293050.25},
+					{month: 'January', waittime: 585796},
+					{month: 'February', waittime: 1513650.78},
+					{month: 'March', waittime: 1114476},
+					{month: 'April', waittime: 1268884},
+				];
+				$("#bar-7").dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: "month"
+					},
+					series: [
+						{ valueField: "waittime", name: "Sq. Ft. of Turf Replaced ", color: "#7c38bc" },
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: "Sq. Ft. of Turf Replaced ",
+					legend: {
+						verticalAlignment: "bottom",
+						horizontalAlignment: "center"
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}
+					}
+				});
+			});
+			</script>
+			<div id="bar-7" style="height: 250px; width: 100%;"></div>
+		</div>
+	</div>
+</div>	
+</div>												
+<div class="row">
+<a name="datavisitors"></a>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="col-sm-12">
+							
+			<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
+				var dataSource = [
+					{month: 'June', waittime: 99359.8},
+					{month: 'July', waittime: 489518.32},
+					{month: 'August', waittime: 189535},
+					{month: 'September', waittime: 918331.1},
+					{month: 'October', waittime: 877858.66},
+					{month: 'November', waittime: 330033.1},
+					{month: 'December', waittime: 833731.75},
+					{month: 'January', waittime: 1634509},
+					{month: 'February', waittime: 4510961.61},
+					{month: 'March', waittime: 3580279},
+					{month: 'April', waittime: 4121885},
+				];
+				$("#bar-8").dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: "month"
+					},
+					series: [
+						{ valueField: "waittime", name: "Incentives Paid for Turf Removal", color: "#7c38bc" },
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: "Incentives Paid for Turf Removal",
+					legend: {
+						verticalAlignment: "bottom",
+						horizontalAlignment: "center"
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}
+					}
+				});
+			});
+			</script>
+			<div id="bar-8" style="height: 250px; width: 100%;"></div>
+		</div>
+	</div>
+</div>
+
 			</div>
 			
 			
@@ -263,10 +379,10 @@
 </footer>
 
 	
-<!-- Page Loading Overlay -->
+<!-- Page Loading Overlay
 <div class="page-loading-overlay">
 	<div class="loader-2"></div>
-</div>
+</div> -->
 <!-- Bottom Scripts -->
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/TweenMax.min.js"></script>
@@ -285,6 +401,17 @@
 
 <!-- JavaScripts initializations and stuff -->
 <script src="/js/xenon-custom.js"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55976849-3', 'auto');
+ga('send', 'pageview');
+
+</script>
 	
 		</div>
 	
