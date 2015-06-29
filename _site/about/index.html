@@ -174,7 +174,7 @@
 			<div class="col-sm-6">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h3 class="panel-title">Job Growth</h3>
+								<h3 class="panel-title">Job Growth: Overall Employment</h3>
 								<div class="panel-options">
 									<a href="#" data-toggle="panel">
 										<span class="collapse-icon">&ndash;</span>
@@ -192,31 +192,36 @@
 										if( ! $.isFunction($.fn.dxChart))
 											return;
 										
-										var dataSource = [
-											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
-											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
-											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
-											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
-											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
-											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
-											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
-											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
-											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
-										];
-									
+								
+										var dataSource = {
+											store: new DevExpress.data.CustomStore({
+												load: function() {
+													return $.getJSON("https://performance.lacity.org/resource/ksyv-cia6.json?$order=date%20ASC&$offset=100");
+												}
+											})
+										}
+							
 										$("#bar-3").dxChart({
 											dataSource: dataSource,
 											commonSeriesSettings: {
-												argumentField: "year"
+												argumentField: "month_year"
 											},
 											series: [
-												{ valueField: "losangeles", name: "Jobs in Los Angeles", color: "#40bbea" },
-												{ valueField: "angelenos", name: "Jobs for Angelenos", color: "#cc3f44" },
+												{ valueField: "ca_edd_employment_estimate", name: "CA EDD Estimates", color: "#fcd036" },
+												{ valueField: "household_employment", name: "UCLA Anderson Forecast", color: "#990000" },
+												
 											],
 											argumentAxis:{
 												grid:{
 													visible: true
-												}
+												},
+												valuetype: 'string',
+												
+											},
+											valueAxis: { valueType: 'numeric',
+											},
+											tooltip:{
+												enabled: true
 											},
 											tooltip:{
 												enabled: true
