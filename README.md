@@ -19,9 +19,23 @@ The core technology is TableTop.js, Bootstrap, Sheetsee.js, and Jekyll -- all cl
 
 There are two versions of the Dashboard: this repository, which relies on Jekyll to manage pages / deployment; and another, lighterweight version that is all static HTML. (See here for documentation on deploying the latter, which is far easier and requires no local software -- eg git, etc.)
 
-### Redeploying the site
+### Redeploying the site locally
 
-The site is hosted on GitHub using Github Pages and Jekyll. This means it comes at no cost and requires no internal hosting. 
+
+- [Fork this repository](https://github.com/datala/bradley-tower/fork)
+- Clone it: `git clone https://github.com/YOUR-USER/bradley-tower`
+- Install jekyll gem: gem install jekyll
+- Run the jekyll server: `jekyll serve`
+
+
+### Deploying to Github
+
+The site is hosted on GitHub using Github Pages and Jekyll. This means it comes at no cost and requires no internal hosting. Since it uses a few Jekyll plugins that Github doesn't support out of the box, you need to compile the static site locally and then push up final/live changes to a gh-pages branch on Github. This has been built into the system to make it fairly trivial by simply following up changes with a "rake" command:
+
+- git add .
+- git commit -m "MADE CHANGES"
+- git commit origin master
+- rake
 
 ### Setting up the Data
 
@@ -31,11 +45,18 @@ All of the data for the "metric cards" comes from a specific Google Sheet for ea
 
 It's important to keep the formatting/headers from the spreadsheet. You can grab a copy of the spreadsheet here and copy to your own Google Docs account. 
 
-1) Go to the Google Sheets template
-2) Make a copy to your own account
-3) Select File - Publish to the Web, and copy the SheetID from the provided url (e.g. 1ZVxlgt9couygM7bzteI3YMX8OSE-jnfZAssTb8xUQ2Q)
-4) Paste that url in the header section of any dashboard you hope to create with the label (gdoc) (see more below)
+1. Go to the Google Sheets template
+2. Make a copy to your own account
+3. Select File - Publish to the Web, and copy the SheetID from the provided url (e.g. 1ZVxlgt9couygM7bzteI3YMX8OSE-jnfZAssTb8xUQ2Q)
+4. Paste that url in the header section of any dashboard you hope to create with the label (gdoc) 
 
 Note: the icon column relies on the popular, open, and free icons from Linecons and Font Awesome.
+
+### Connecting the data to the dashboards
+
+The basic content structure of the site is two fold: 
+
+1. Top sheet: This features all the key visualizations in one page on the homepage; as mentioned above, these are fairly custom visualizations that are stored in /_includes/viz to ensure easy recall from page to page.
+2. Dashboard pages: These pages rely on the Google Sheets integration and are stored in /_posts. To create a new page, simply duplicate an existing one and edit the file name, title, permalink, and **importantly the gdocs** field in the header. That will power the page.
 
 Please reach out to @abhinemani if you're interested in helping out or redeploying it. 

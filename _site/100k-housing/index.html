@@ -7,7 +7,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Homelessness &#8211; City of Los Angeles Mayoral Dashboard</title>
+    <title>100k Housing Units &#8211; City of Los Angeles Mayoral Dashboard</title>
     <meta name="description" content="The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.">
     <meta name="author" content="">
 	
@@ -161,13 +161,13 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-			<h1 class="bg-info">Homelessness</h1>
+			<h1 class="bg-info">100k Housing Units</h1>
 			<script>
 			var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
 			</script>
 			<div class="row">
-			    <div class="panel panel-default">
-				
+			    
+<div class="panel panel-default">
 	<div class="panel-body">
 		<div class="col-sm-12">
 							
@@ -176,37 +176,34 @@
 			{
 				if( ! $.isFunction($.fn.dxChart))
 					return;
-									
 				var dataSource = [
-
-					{month: 'Jan-14', waittime: 257},
-					{month: 'Feb-14', waittime: 288},
-					{month: 'March-14', waittime: 266},
-					{month: 'April-14', waittime: 304},
-					{month: 'May-14', waittime: 289},
-					{month: 'June-14', waittime: 306},
-					{month: 'July-14', waittime: 328},
-					{month: 'Aug-14', waittime: 334},
-					{month: 'Sept-14', waittime: 389},
-					{month: 'Oct-14', waittime: 242},
-					{month: 'Nov-14', waittime: 155},
-					{month: 'Dec-14', waittime: 141},
-					{month: 'Jan-15', waittime: 127},
-					{month: 'Feb-15', waittime: 136},
-					{month: 'March-15', waittime: 135},
-					{month: 'April-15', waittime: 115},
-					{month: 'May-15', waittime: 148},
-					
+{month: 'Q1 FY11;', waittime: 1331},
+{month: 'Q2 FY11;', waittime: 1172},
+{month: 'Q3 FY11;', waittime: 1114},
+{month: 'Q4 FY11;', waittime: 1936},
+{month: 'Q1 FY12;', waittime: 1471},
+{month: 'Q2 FY12;', waittime: 2148},
+{month: 'Q3 FY12;', waittime: 2693},
+{month: 'Q4 FY12;', waittime: 1636},
+{month: 'Q1 FY13;', waittime: 1624},
+{month: 'Q2 FY13;', waittime: 1732},
+{month: 'Q3 FY13;', waittime: 1841},
+{month: 'Q4 FY13;', waittime: 2805},
+{month: 'Q1 FY14;', waittime: 1665},
+{month: 'Q2 FY14;', waittime: 2977},
+{month: 'Q3 FY14;', waittime: 3247},
+{month: 'Q4 FY14;', waittime: 3146},
+{month: 'Q1 FY15;', waittime: 2581},
+{month: 'Q2 FY15;', waittime: 3491},
+{month: 'Q3 FY15;', waittime: 4587},
 				];
-								
 				$("#bar-7").dxChart({
 					dataSource: dataSource,
 					commonSeriesSettings: {
 						argumentField: "month"
 					},
 					series: [
-						{ valueField: "waittime", name: "Veteran Homeless LA Monthly Housed", color: "#7c38bc" },
-																												
+						{ valueField: "waittime", name: "Quarterly Housing Units Permitted", color: "#7c38bc" },
 					],
 					argumentAxis:{
 						grid:{
@@ -216,7 +213,7 @@
 					tooltip:{
 						enabled: true
 					},
-					title: "Veteran Homeless LA Monthly Housed",
+					title: "Quarterly Housing Units Permitted ",
 					legend: {
 						verticalAlignment: "bottom",
 						horizontalAlignment: "center"
@@ -225,16 +222,89 @@
 						border:{
 							visible: true,
 							right: false
-						}	   
+						}
 					}
 				});
 			});
 			</script>
 			<div id="bar-7" style="height: 250px; width: 100%;"></div>
-	
 		</div>
-				
 	</div>
+</div>	
+</div>												
+<div class="row">
+<a name="datavisitors"></a>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="col-sm-12">
+							
+			<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				if( ! $.isFunction($.fn.dxChart))
+					return;
+				var dataSource = [
+					{month: 'Jul-13', filed: 146, completed: 162},
+					{month: 'Aug-13', filed: 196, completed: 142},
+					{month: 'Sep-13', filed: 188, completed: 126},
+					{month: 'Oct-13', filed: 271, completed: 172},
+					{month: 'Nov-13', filed: 193, completed: 125},
+					{month: 'Dec-13', filed: 216, completed: 180},
+					{month: 'Jan-14', filed: 213, completed: 143},
+					{month: 'Feb-14', filed: 208, completed: 147},
+					{month: 'Mar-14', filed: 204, completed: 140},
+					{month: 'Apr-14', filed: 276, completed: 196},
+					{month: 'May-14', filed: 252, completed: 165},
+					{month: 'Jun-14', filed: 246, completed: 200},
+					{month: 'Jul-14', filed: 303, completed: 216},
+					{month: 'Aug-14', filed: 314, completed: 160},
+					{month: 'Sep-14', filed: 257, completed: 227},
+					{month: 'Oct-14', filed: 276, completed: 209},
+					{month: 'Nov-14', filed: 248, completed: 180},
+					{month: 'Dec-14', filed: 340, completed: 197},
+					{month: 'Jan-15', filed: 205, completed: 169},
+					{month: 'Feb-15', filed: 251, completed: 182},
+					{month: 'Mar-15', filed: 213, completed: 183},
+					{month: 'Apr-15', filed: 253, completed: 199},
+					{month: 'May-15', filed: 221, completed: 134},
+					{month: 'Jun-15', filed: 249, completed: 239},
+				];
+				$("#bar-8").dxChart({
+					dataSource: dataSource,
+					commonSeriesSettings: {
+						argumentField: "month"
+					},
+					series: [
+						{ valueField: "filed", name: "Cases filed (Monthly)", color: "#7c38bc" },
+						{ valueField: "completed", name: "Cases completed (Monthly)", color: "#40bbea" },
+						
+					],
+					argumentAxis:{
+						grid:{
+							visible: true
+						}
+					},
+					tooltip:{
+						enabled: true
+					},
+					title: "DCP Cases",
+					legend: {
+						verticalAlignment: "bottom",
+						horizontalAlignment: "center"
+					},
+					commonPaneSettings: {
+						border:{
+							visible: true,
+							right: false
+						}
+					}
+				});
+			});
+			</script>
+			<div id="bar-8" style="height: 250px; width: 100%;"></div>
+		</div>
+	</div>
+</div>
 			</div>
 			
 			
@@ -242,7 +312,7 @@
 
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
-				var URL = "1JURX0KXkThk1wm-bFu7PLhaYlA7yX4IYKMlJzO9e6fc"
+				var URL = "11ao4fTZpJeXX0xoU8ySiqYYnwotmk7_ZAeFY9JCFyJQ"
 				Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
 			})
 				
