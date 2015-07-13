@@ -48,7 +48,7 @@ All of the data for the "metric cards" comes from a specific Google Sheet for ea
 
 It's important to keep the formatting/headers from the spreadsheet. You can grab a copy of the spreadsheet here and copy to your own Google Docs account. 
 
-1. Go to the Google Sheets template
+1. Go to the [Google Sheets template](https://docs.google.com/spreadsheets/d/12zrcwYlb9HU2l9swUGrAw9f7Kll_kf5V-Fm5KxOgga8/edit#gid=113826837)
 2. Make a copy to your own account
 3. Select File - Publish to the Web, and copy the SheetID from the provided url (e.g. 1ZVxlgt9couygM7bzteI3YMX8OSE-jnfZAssTb8xUQ2Q)
 4. Paste that url in the header section of any dashboard you hope to create with the label (gdoc) 
