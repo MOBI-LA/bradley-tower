@@ -1,6 +1,6 @@
 <div class="panel panel-default">
 	<div class="panel-body">
-		<div class="col-sm-6">
+		<div class="col-sm-12">
 							
 			<script type="text/javascript">
 			jQuery(document).ready(function($)
@@ -68,57 +68,8 @@
 			});
 			</script>
 			<div id="bar-12" style="height: 300px; width: 100%;"></div>
-					
-					
-		</div>
-		<div class="col-sm-6">
-			<script type="text/javascript">
-			jQuery(document).ready(function($)
-			{
-				if( ! $.isFunction($.fn.dxChart))
-					return;
-							
-				var dataSource = [
-					{region: "New Starts Grants: Purple Line Phase 1", val: 1250000000},
-					{region: "New Starts Grants: Regional Connector", val: 670000000},
-					{region: "TIFIA: Purple Line Phase 1", val: 856000000},
-					{region: "TIFIA: Regional Connector", val: 160000000}
-				], timer;
-						
-				$("#bar-8").dxPieChart({
-					dataSource: dataSource,
-					title: "MTA Money Raised ($3B)",
-					tooltip: {
-						enabled: true,
-						format:"millions",
-						customizeText: function() { 
-							return this.argumentText + "<br/>" + this.valueText;
-						}
-					},
-					size: {
-						height: 280
-					},
-					pointClick: function(point) {
-						point.showTooltip();
-						clearTimeout(timer);
-						timer = setTimeout(function() { point.hideTooltip(); }, 2000);
-						$("select option:contains(" + point.argument + ")").prop("selected", true);
-					},
-					legend: {
-						visible: true,
-
-					},  
-					series: [{
-						type: "doughnut",
-						argumentField: "region"
-					}],
-					palette: xenonPalette
-							
-				});
-						
-			});
-			</script>
-			<div id="bar-8" style="height: 300px; width: 100%;"></div>
+				
 		</div>
 
 	</div>
+</div>

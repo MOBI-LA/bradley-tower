@@ -7,7 +7,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Homelessness &#8211; City of Los Angeles Mayoral Dashboard</title>
+    <title>RAP &#8211; City of Los Angeles Mayoral Dashboard</title>
     <meta name="description" content="The Mayor&#39;s Dashboard tracks key metrics and outcomes from the City of Los Angeles. The platform is open-source and easily reusable; contact us if your city is interested in deploying it.">
     <meta name="author" content="">
 	
@@ -214,13 +214,13 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-			<h1 class="bg-info">Homelessness</h1>
+			<h1 class="bg-info">RAP</h1>
 			<script>
 			var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
 			</script>
 			<div class="row">
-			    <div class="panel panel-default">
-				
+			    
+<div class="panel panel-default">
 	<div class="panel-body">
 		<div class="col-sm-12">
 							
@@ -229,37 +229,21 @@
 			{
 				if( ! $.isFunction($.fn.dxChart))
 					return;
-									
 				var dataSource = [
+					{month: 'FY2012', waittime: 325000},
+					{month: 'FY2013', waittime: 310000},
+					{month: 'FY2014', waittime: 536357},
+					{month: 'FY2015', waittime: 374469},
 
-					{month: 'Jan-14', waittime: 257},
-					{month: 'Feb-14', waittime: 288},
-					{month: 'March-14', waittime: 266},
-					{month: 'April-14', waittime: 304},
-					{month: 'May-14', waittime: 289},
-					{month: 'June-14', waittime: 306},
-					{month: 'July-14', waittime: 328},
-					{month: 'Aug-14', waittime: 334},
-					{month: 'Sept-14', waittime: 389},
-					{month: 'Oct-14', waittime: 242},
-					{month: 'Nov-14', waittime: 155},
-					{month: 'Dec-14', waittime: 141},
-					{month: 'Jan-15', waittime: 127},
-					{month: 'Feb-15', waittime: 136},
-					{month: 'March-15', waittime: 135},
-					{month: 'April-15', waittime: 115},
-					{month: 'May-15', waittime: 148},
-					
 				];
-								
 				$("#bar-7").dxChart({
 					dataSource: dataSource,
 					commonSeriesSettings: {
 						argumentField: "month"
 					},
 					series: [
-						{ valueField: "waittime", name: "Veteran Homeless LA Monthly Housed", color: "#7c38bc" },
-																												
+						{ valueField: "waittime", name: "Total visitors to museums", color: "#7c38bc" },
+						
 					],
 					argumentAxis:{
 						grid:{
@@ -269,7 +253,7 @@
 					tooltip:{
 						enabled: true
 					},
-					title: "Veteran Homeless LA Monthly Housed",
+					title: "Total visitors to museums (excluding Griffith Observatory)",
 					legend: {
 						verticalAlignment: "bottom",
 						horizontalAlignment: "center"
@@ -278,16 +262,15 @@
 						border:{
 							visible: true,
 							right: false
-						}	   
+						}
 					}
 				});
 			});
 			</script>
 			<div id="bar-7" style="height: 250px; width: 100%;"></div>
-	
 		</div>
-				
 	</div>
+</div>												
 			</div>
 			
 			
@@ -295,7 +278,7 @@
 
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
-				var URL = "1JURX0KXkThk1wm-bFu7PLhaYlA7yX4IYKMlJzO9e6fc"
+				var URL = "1pvDsnbQ75R-OZPD588n410FmQ6VuYbnXQx_Q8hqSY_A"
 				Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
 			})
 				
