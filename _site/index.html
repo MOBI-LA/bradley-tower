@@ -355,6 +355,8 @@
 					{month: 'April 2015', waittime: 8.53, goal: 3 },
 					{month: 'May 2015', waittime: 9.23, goal: 3 },
 					{month: 'June 2015', waittime: 8.81, goal: 3 },
+					{month: 'July 2015', waittime: 2.73, goal: 3 },
+					
 				];
 								
 				$("#bar-12").dxChart({
@@ -483,6 +485,9 @@ jQuery(document).ready(function($)
 		{ id: ++i, part1: 5, part2: 5 },
 		{ id: ++i, part1: 5, part2: 5 },
 		{ id: ++i, part1: 5, part2: 5 },
+		{ id: ++i, part1: 5, part2: 5 },
+		{ id: ++i, part1: 6, part2: 5 },
+		
 							
 							
 	];
@@ -530,7 +535,7 @@ jQuery(document).ready(function($)
 <div class="col-sm-12">
 	<div class="chart-item-bg">
 		<div class="chart-label">
-			<div class="h3 text-bold"  data-count="this" data-from="0.00" data-to="320602" data-suffix=" May" data-duration="1">0.00%</div>
+			<div class="h3 text-bold"  data-count="this" data-from="0.00" data-to="320602" data-suffix=" July" data-duration="1">0.00%</div>
 			<span class="text-medium text-muted">Unique visitors: LACity.org</span>
 		</div>
 		<div id="pageviews-visitors-chart" style="height: 220px;"></div>
@@ -548,7 +553,7 @@ jQuery(document).ready(function($)
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">LAFD Response Times: May '15</h3>
+		<h3 class="panel-title">LAFD Response Times: June '15</h3>
 		<div class="panel-options">
 			<a href="#" data-toggle="panel">
 				<span class="collapse-icon">&ndash;</span>
@@ -642,13 +647,13 @@ jQuery(document).ready(function($)
 							font: { size: 12 }
 						},
 						subtitle: {
-							text: '73 seconds (Under target: 80)',
+							text: '72 seconds (Under target: 80)',
 							font: {
 								size: 10,
 								color: 'grey',
 							},
 						},
-						value: 73,
+						value: 72,
 						subvalues: [80]
 					}).dxCircularGauge('instance');
 				});
@@ -686,13 +691,13 @@ jQuery(document).ready(function($)
 							font: { size: 12 }
 						},
 						subtitle: {
-							text: '72 seconds (Over target: 60)',
+							text: '73 seconds (Over target: 60)',
 							font: {
 								size: 10,
 								color: 'grey',
 							},
 						},
-						value: 72,
+						value: 73,
 						valueIndicator: {
 							color: 'red'
 						},
@@ -738,13 +743,13 @@ jQuery(document).ready(function($)
 							color: 'green'
 						},
 						subtitle: {
-							text: '246 seconds (Under target: 290)',
+							text: '249 seconds (Under target: 290)',
 							font: {
 								size: 10,
 								color: 'green',
 							},
 						},
-						value: 246,
+						value: 249,
 						subvalues: [290]
 					}).dxCircularGauge('instance');
 					$("#gauge-2-randomize").on('click', function(ev)
@@ -795,13 +800,13 @@ jQuery(document).ready(function($)
 							color: 'red'
 						},
 						subtitle: {
-							text: '251 seconds (Over target: 240)',
+							text: '250 seconds (Over target: 240)',
 							font: {
 								size: 10,
 								color: 'grey',
 							},
 						},
-						value: 251,
+						value: 250,
 						subvalues: [240]
 					}).dxCircularGauge('instance');
 					$("#gauge-2-randomize").on('click', function(ev)
